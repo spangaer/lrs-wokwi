@@ -259,6 +259,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "esp-gallery"
+version = "0.1.0"
+dependencies = [
+ "display-interface-spi",
+ "embedded-graphics",
+ "embedded-hal 0.2.7",
+ "esp-backtrace",
+ "esp-hal",
+ "esp-println",
+ "libm",
+ "mipidsi",
+ "profont",
+]
+
+[[package]]
 name = "esp-hal"
 version = "0.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -719,21 +734,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 1.0.109",
-]
-
-[[package]]
-name = "rust_project_esp32c3"
-version = "0.1.0"
-dependencies = [
- "display-interface-spi",
- "embedded-graphics",
- "embedded-hal 0.2.7",
- "esp-backtrace",
- "esp-hal",
- "esp-println",
- "libm",
- "mipidsi",
- "profont",
 ]
 
 [[package]]

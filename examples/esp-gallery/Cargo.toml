@@ -1,5 +1,5 @@
 [package]
-name = "rust_project_esp32c3"
+name = "esp-gallery"
 version = "0.1.0"
 authors = ["Kirill Mikhailov <playfulFence@gmail.com>"]
 edition = "2021"
