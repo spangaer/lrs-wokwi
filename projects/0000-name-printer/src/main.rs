@@ -153,7 +153,7 @@ fn main() -> ! {
     let text_box = display.bounding_box().center() - Size::new(80, 0);
 
     let mut button_yellow = Button::new(io.pins.gpio0.into_pull_up_input());
-    let mut button_blue = Button::new(io.pins.gpio1.into_pull_up_input());
+    let mut button_purple = Button::new(io.pins.gpio1.into_pull_up_input());
     let mut button_green = Button::new(io.pins.gpio8.into_pull_up_input());
 
     start(text_box, &mut display);
@@ -172,14 +172,14 @@ fn main() -> ! {
             .unwrap();
         }
 
-        if let Event::Pressed = button_blue.poll(&mut delay) {
-            println!("pressed blue");
+        if let Event::Pressed = button_purple.poll(&mut delay) {
+            println!("pressed purple");
             let _ = display.clear(Rgb565::WHITE);
 
             Text::new(
-                "Blue",
+                "Purple",
                 text_box,
-                MonoTextStyle::new(&PROFONT_24_POINT, Rgb565::CSS_DARK_BLUE),
+                MonoTextStyle::new(&PROFONT_24_POINT, Rgb565::CSS_PURPLE),
             )
             .draw(&mut display)
             .unwrap();

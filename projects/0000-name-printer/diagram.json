@@ -30,7 +30,7 @@
       "top": -182.69,
       "left": -552.83,
       "rotate": 180,
-      "attrs": { "color": "blue" }
+      "attrs": { "color": "purple" }
     },
     {
       "type": "wokwi-pushbutton",
