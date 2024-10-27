@@ -1,8 +1,7 @@
 [workspace]
 resolver = "2"
 
-members = ["examples/*"]
-# members = ["examples/*", "projets/*"]
+members = ["examples/*", "projects/*"]
 # exclude = [".devcontainer", ".vscode", ".git", "target"]
 
 [patch.crates-io]

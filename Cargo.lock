@@ -580,6 +580,21 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b4bb1638d419e12f8b1c43d9e639abd0d1424285bdea2f76aa231e233c63cd3a"
 
 [[package]]
+name = "name-printer"
+version = "0.1.0"
+dependencies = [
+ "display-interface-spi",
+ "embedded-graphics",
+ "embedded-hal 0.2.7",
+ "esp-backtrace",
+ "esp-hal",
+ "esp-println",
+ "libm",
+ "mipidsi",
+ "profont",
+]
+
+[[package]]
 name = "nb"
 version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"

@@ -1,6 +1,5 @@
 {
   "version": 1,
-  "author": "Kirill Mikhailov <playfulfence@gmail.com>",
   "editor": "wokwi",
   "parts": [
     {
@@ -52,17 +51,17 @@
     [ "esp:4", "lcd1:LED", "magenta", [ "v-0.39", "h52.29", "v-184.89", "h-216.27", "v149.17" ] ],
     [ "esp:GND.1", "lcd1:GND", "black", [ "v-0.77", "h-35.66", "v130" ] ],
     [ "esp:3V3.1", "lcd1:VCC", "limegreen", [ "h-28.99", "v115.64" ] ],
-    [ "btn1:1.r", "esp:GND.1", "red", [ "v-80.9", "h435.57" ] ],
+    [ "btn1:1.r", "esp:GND.1", "black", [ "v-80.9", "h435.57" ] ],
     [
       "btn1:2.r",
       "esp:0",
       "cyan",
       [ "h11.31", "v-83.23", "h170.71", "v-0.21", "h240.01", "v101.48" ]
     ],
-    [ "btn2:1.r", "btn1:1.l", "red", [ "h-88.94", "v-77.41" ] ],
+    [ "btn2:1.r", "btn1:1.l", "black", [ "h-88.94", "v-77.41" ] ],
     [ "esp:1", "btn2:2.r", "green", [ "h-20.26", "v111.79", "h-496", "v-82" ] ],
     [ "btn3:1.r", "esp:8", "yellow", [ "v-12.41", "h375.46", "v151.81" ] ],
-    [ "btn2:1.l", "btn3:2.l", "red", [ "h29.72", "v-216.06" ] ]
+    [ "btn2:1.l", "btn3:2.l", "black", [ "h29.72", "v-216.06" ] ]
   ],
   "serialMonitor": { 
       "display": "terminal", 
