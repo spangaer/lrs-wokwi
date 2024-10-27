@@ -132,7 +132,23 @@ fn main() -> ! {
 
     println!("Initialized");
 
-    let _ = display.clear(Rgb565::WHITE);
+    fn start<
+        DI: display_interface::WriteOnlyDataCommand,
+        RST: embedded_hal::digital::v2::OutputPin,
+    >(
+        text_box: Point,
+        display: &mut Display<DI, mipidsi::models::ILI9341Rgb565, RST>,
+    ) {
+        let _ = display.clear(Rgb565::WHITE);
+
+        Text::new(
+            "Start",
+            text_box,
+            MonoTextStyle::new(&PROFONT_24_POINT, Rgb565::BLACK),
+        )
+        .draw(display)
+        .unwrap();
+    }
 
     let text_box = display.bounding_box().center() - Size::new(80, 0);
 
@@ -140,15 +156,7 @@ fn main() -> ! {
     let mut button_blue = Button::new(io.pins.gpio1.into_pull_up_input());
     let mut button_green = Button::new(io.pins.gpio8.into_pull_up_input());
 
-    // fn start(text_box: Point, display: Display<_, _, _>) {}
-
-    Text::new(
-        "Start",
-        text_box,
-        MonoTextStyle::new(&PROFONT_18_POINT, Rgb565::BLACK),
-    )
-    .draw(&mut display)
-    .unwrap();
+    start(text_box, &mut display);
 
     loop {
         if let Event::Pressed = button_yellow.poll(&mut delay) {
@@ -158,7 +166,7 @@ fn main() -> ! {
             Text::new(
                 "Yellow",
                 text_box,
-                MonoTextStyle::new(&PROFONT_18_POINT, Rgb565::CSS_DARK_GOLDENROD),
+                MonoTextStyle::new(&PROFONT_24_POINT, Rgb565::CSS_DARK_GOLDENROD),
             )
             .draw(&mut display)
             .unwrap();
@@ -171,7 +179,7 @@ fn main() -> ! {
             Text::new(
                 "Blue",
                 text_box,
-                MonoTextStyle::new(&PROFONT_18_POINT, Rgb565::CSS_DARK_BLUE),
+                MonoTextStyle::new(&PROFONT_24_POINT, Rgb565::CSS_DARK_BLUE),
             )
             .draw(&mut display)
             .unwrap();
@@ -179,15 +187,7 @@ fn main() -> ! {
 
         if let Event::Pressed = button_green.poll(&mut delay) {
             println!("pressed green");
-            let _ = display.clear(Rgb565::WHITE);
-
-            Text::new(
-                "Start",
-                text_box,
-                MonoTextStyle::new(&PROFONT_18_POINT, Rgb565::BLACK),
-            )
-            .draw(&mut display)
-            .unwrap();
+            start(text_box, &mut display);
         }
     }
 }
