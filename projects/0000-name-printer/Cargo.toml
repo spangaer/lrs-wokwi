@@ -1,0 +1,27 @@
+[package]
+name = "name-printer"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[profile.dev]
+debug = true    # Symbols are nice and they don't increase the size on Flash
+opt-level = "z"
+
+[dependencies]
+esp-hal = { version = "0.16.0", features = ["esp32c3"] }
+esp-println = { git = "https://github.com/esp-rs/esp-println.git", tag = "v0.9.0", version = "0.9.0", features = [
+    "esp32c3",
+] }
+esp-backtrace = { git = "https://github.com/esp-rs/esp-backtrace.git", tag = "v0.11.0", version = "0.11.0", features = [
+    "esp32c3",
+    "panic-handler",
+    "println",
+] }
+
+mipidsi = "0.7.1"
+display-interface-spi = "0.4.1"
+embedded-graphics = "0.8.0"
+embedded-hal = "0.2.7"
+profont = { version = "0.6.1", git = "https://github.com/sambenko/profont.git", branch = "embedded-graphics-0.8.0-fixes" } # font with extended signs and options of sizing (unlike fonts in embedded-graphics)
+libm = "0.2.5"
