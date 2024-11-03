@@ -590,7 +590,6 @@ dependencies = [
  "esp-backtrace",
  "esp-hal",
  "esp-println",
- "libm",
  "mipidsi",
  "names",
  "profont",

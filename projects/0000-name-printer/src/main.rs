@@ -2,8 +2,7 @@
 #![no_main]
 
 use esp_hal::{
-    clock::ClockControl, delay::Delay, gpio::InputPin, gpio::*, peripherals::Peripherals,
-    prelude::*, spi, timer::TimerGroup, Rtc, IO,
+    clock::ClockControl, delay::Delay, gpio::*, peripherals::Peripherals, prelude::*, spi, IO,
 };
 
 /* Display and graphics */
@@ -14,27 +13,16 @@ use mipidsi::{
 
 use display_interface_spi::SPIInterfaceNoCS;
 
-use core::f32::consts::PI;
-use libm::{cos, sin};
 use names;
 
 use embedded_graphics::{
-    draw_target::DrawTarget,
-    geometry::*,
-    image::Image,
-    mono_font::{ascii::FONT_10X20, MonoTextStyle, MonoTextStyleBuilder},
-    pixelcolor::*,
-    prelude::RgbColor,
-    prelude::*,
-    primitives::{Circle, PrimitiveStyle, PrimitiveStyleBuilder, Rectangle},
-    text::*,
-    text::{Alignment, Text},
-    Drawable,
+    draw_target::DrawTarget, geometry::*, mono_font::MonoTextStyle, pixelcolor::*,
+    prelude::RgbColor, text::Text, Drawable,
 };
 
 use embedded_hal;
 
-use profont::{PROFONT_18_POINT, PROFONT_24_POINT};
+use profont::PROFONT_24_POINT;
 
 use esp_backtrace as _;
 use esp_println::println;
@@ -100,11 +88,6 @@ fn main() -> ! {
     let dc = io.pins.gpio3;
     let sck = io.pins.gpio6;
     let miso = io.pins.gpio9;
-    let backlight = io.pins.gpio4;
-
-    /* Then set backlight (set_low() - display lights up when signal is in 0, set_high() - opposite case(for example.)) */
-    let mut backlight = backlight.into_push_pull_output();
-    //backlight.set_low().unwrap();
 
     /* Configure SPI */
     let spi = spi::master::Spi::new(

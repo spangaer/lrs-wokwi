@@ -1,10 +1,7 @@
 #![no_std]
 #![no_main]
 
-use esp_hal::{
-    clock::ClockControl, delay::Delay, gpio::InputPin, gpio::*, peripherals::Peripherals,
-    prelude::*, spi, timer::TimerGroup, Rtc, IO,
-};
+use esp_hal::{clock::ClockControl, delay::Delay, peripherals::Peripherals, prelude::*, spi, IO};
 
 /* Display and graphics */
 use mipidsi::options::{ColorOrder, Orientation};
@@ -17,20 +14,16 @@ use libm::{cos, sin};
 use embedded_graphics::{
     draw_target::DrawTarget,
     geometry::*,
-    image::Image,
     mono_font::{ascii::FONT_10X20, MonoTextStyle, MonoTextStyleBuilder},
     pixelcolor::*,
     prelude::RgbColor,
     prelude::*,
-    primitives::{Circle, PrimitiveStyle, PrimitiveStyleBuilder, Rectangle},
-    text::*,
+    primitives::{Circle, PrimitiveStyleBuilder, Rectangle},
     text::{Alignment, Text},
     Drawable,
 };
 
-use embedded_hal;
-
-use profont::{PROFONT_18_POINT, PROFONT_24_POINT};
+use profont::PROFONT_18_POINT;
 
 use esp_backtrace as _;
 use esp_println::println;
@@ -83,7 +76,7 @@ impl<T: ::embedded_hal::digital::v2::InputPin<Error = core::convert::Infallible>
 #[entry]
 fn main() -> ! {
     let peripherals = Peripherals::take();
-    let mut system = peripherals.SYSTEM.split();
+    let system = peripherals.SYSTEM.split();
     let mut clocks = ClockControl::boot_defaults(system.clock_control).freeze();
 
     println!("About to initialize the SPI LED driver ILI9341");
@@ -96,11 +89,6 @@ fn main() -> ! {
     let dc = io.pins.gpio3;
     let sck = io.pins.gpio6;
     let miso = io.pins.gpio9;
-    let backlight = io.pins.gpio4;
-
-    /* Then set backlight (set_low() - display lights up when signal is in 0, set_high() - opposite case(for example.)) */
-    let mut backlight = backlight.into_push_pull_output();
-    //backlight.set_low().unwrap();
 
     /* Configure SPI */
     let spi = spi::master::Spi::new(
@@ -125,7 +113,7 @@ fn main() -> ! {
 
     println!("Initialized");
 
-    display.clear(Rgb565::WHITE);
+    let _ = display.clear(Rgb565::WHITE);
 
     let eye_plate_tab = display.bounding_box().center() - Size::new(80, 30);
     let lollipop_plate_tab = display.bounding_box().center() - Size::new(80, 0);
@@ -234,7 +222,6 @@ fn main() -> ! {
         }
 
         if let Event::Pressed = button_ok.poll(&mut delay) {
-            display.clear(Rgb565::WHITE);
             if pointer_position == 1 {
                 let default_style = MonoTextStyleBuilder::new()
                     .font(&FONT_10X20)
@@ -277,7 +264,6 @@ fn main() -> ! {
                         break;
                     }
                 }
-                display.clear(Rgb565::WHITE);
                 Text::new(
                     "Eye",
                     eye_plate_tab,
@@ -421,7 +407,6 @@ fn main() -> ! {
                         break;
                     }
                 }
-                display.clear(Rgb565::WHITE);
                 Text::new(
                     "Eye",
                     eye_plate_tab,
@@ -647,7 +632,6 @@ fn main() -> ! {
                         break;
                     }
                 }
-                display.clear(Rgb565::WHITE);
                 Text::new(
                     "Eye",
                     eye_plate_tab,

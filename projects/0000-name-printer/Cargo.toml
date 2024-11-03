@@ -25,6 +25,6 @@ display-interface = "0.4.1"
 embedded-graphics = "0.8.0"
 embedded-hal = "0.2.7"
 profont = { version = "0.6.1", git = "https://github.com/sambenko/profont.git", branch = "embedded-graphics-0.8.0-fixes" } # font with extended signs and options of sizing (unlike fonts in embedded-graphics)
-libm = "0.2.5"
+
 
 names = { path = "../../tools/names" }
