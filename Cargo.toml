@@ -6,3 +6,10 @@ members = ["examples/*", "projects/*", "tools/*"]
 
 [patch.crates-io]
 esp-println = { git = "https://github.com/esp-rs/esp-println.git", tag = "v0.9.0", version = "0.9.0" }
+
+[profile.release]
+opt-level = "z"   # 428k
+strip = "symbols" # 155k
+lto = true        # Enable Link Time Optimization
+codegen-units = 1 # Single codegen unit (for better LTO optimization)
+# 138k
