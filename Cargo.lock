@@ -592,8 +592,13 @@ dependencies = [
  "esp-println",
  "libm",
  "mipidsi",
+ "names",
  "profont",
 ]
+
+[[package]]
+name = "names"
+version = "0.1.0"
 
 [[package]]
 name = "nb"

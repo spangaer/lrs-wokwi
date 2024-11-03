@@ -16,6 +16,7 @@ use display_interface_spi::SPIInterfaceNoCS;
 
 use core::f32::consts::PI;
 use libm::{cos, sin};
+use names;
 
 use embedded_graphics::{
     draw_target::DrawTarget,
@@ -161,10 +162,10 @@ fn main() -> ! {
     loop {
         if let Event::Pressed = button_yellow.poll(&mut delay) {
             println!("pressed yellow");
-            let _ = display.clear(Rgb565::WHITE);
+            let _ = display.clear(Rgb565::CSS_AZURE);
 
             Text::new(
-                "Yellow",
+                names::ms_yellow(),
                 text_box,
                 MonoTextStyle::new(&PROFONT_24_POINT, Rgb565::CSS_DARK_GOLDENROD),
             )
@@ -174,10 +175,10 @@ fn main() -> ! {
 
         if let Event::Pressed = button_purple.poll(&mut delay) {
             println!("pressed purple");
-            let _ = display.clear(Rgb565::WHITE);
+            let _ = display.clear(Rgb565::CSS_MOCCASIN);
 
             Text::new(
-                "Purple",
+                names::mr_purple(),
                 text_box,
                 MonoTextStyle::new(&PROFONT_24_POINT, Rgb565::CSS_PURPLE),
             )
