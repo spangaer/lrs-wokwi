@@ -1,3 +1,6 @@
+# TODO
+- switch to: riscv32imc-unknown-none-elf
+
 # Learning Rust (_lrs_)
 
 The learning rust (_lrs_) series of repositories have no ambition to contain
