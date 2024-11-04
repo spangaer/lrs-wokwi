@@ -6,6 +6,6 @@
     "formatFiles.excludedFolders": [
         "target"
     ],
-    "rust-analyzer.cargo.target": "riscv32i-unknown-none-elf",
+    "rust-analyzer.cargo.target": "riscv32imc-unknown-none-elf",
     "rust-analyzer.cargo.allTargets": false
 }

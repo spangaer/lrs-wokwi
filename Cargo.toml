@@ -13,3 +13,5 @@ strip = "symbols" # 155k
 lto = true        # Enable Link Time Optimization
 codegen-units = 1 # Single codegen unit (for better LTO optimization)
 # 138k
+# use the full instruction set riscv32imc (multiply + compressed) i.s.o. riscv32i -> 125k
+# opt-level = 3 -> worse results

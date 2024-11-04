@@ -2,5 +2,5 @@
 channel = "1.79"
 # date = "2024-06-16"
 profile = "default"
-targets = ["riscv32i-unknown-none-elf"]
+targets = ["riscv32imc-unknown-none-elf"]
 components = ["rust-src"]

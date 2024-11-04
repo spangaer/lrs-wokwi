@@ -1,5 +1,5 @@
 [wokwi]
 version = 1
 gdbServerPort = 3333
-elf = "../../target/riscv32i-unknown-none-elf/release/name-printer"
-firmware = "../../target/riscv32i-unknown-none-elf/release/name-printer"
+elf = "../../target/riscv32imc-unknown-none-elf/release/name-printer"
+firmware = "../../target/riscv32imc-unknown-none-elf/release/name-printer"
