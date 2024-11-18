@@ -1,17 +1,17 @@
 #![no_std]
 #![no_main]
 
-use esp_hal::{
-    clock::ClockControl, delay::Delay, gpio::*, peripherals::Peripherals, prelude::*, spi, IO,
-};
+use embedded_hal_bus::spi::ExclusiveDevice;
+use esp_hal::{delay::Delay, gpio::*, prelude::*, spi};
 
 /* Display and graphics */
 use mipidsi::{
-    options::{ColorOrder, Orientation},
+    models::ILI9341Rgb565,
+    options::{ColorOrder, Orientation, Rotation},
     Display,
 };
 
-use display_interface_spi::SPIInterfaceNoCS;
+use display_interface_spi::SPIInterface;
 
 use names;
 
@@ -37,7 +37,7 @@ pub struct Button<T> {
     button: T,
     pressed: bool,
 }
-impl<T: ::embedded_hal::digital::v2::InputPin<Error = core::convert::Infallible>> Button<T> {
+impl<T: ::embedded_hal::digital::InputPin<Error = core::convert::Infallible>> Button<T> {
     pub fn new(button: T) -> Self {
         Button {
             button,
@@ -51,7 +51,7 @@ impl<T: ::embedded_hal::digital::v2::InputPin<Error = core::convert::Infallible>
     pub fn poll(&mut self, delay: &mut Delay) -> Event {
         let pressed_now = !self.button.is_low().unwrap();
         if !self.pressed && pressed_now {
-            delay.delay_ms(30 as u32);
+            delay.delay_millis(30 as u32);
             self.check();
             if !self.button.is_low().unwrap() {
                 Event::Pressed
@@ -59,7 +59,7 @@ impl<T: ::embedded_hal::digital::v2::InputPin<Error = core::convert::Infallible>
                 Event::Nothing
             }
         } else if self.pressed && !pressed_now {
-            delay.delay_ms(30 as u32);
+            delay.delay_millis(30 as u32);
             self.check();
             if self.button.is_low().unwrap() {
                 Event::Released
@@ -74,52 +74,54 @@ impl<T: ::embedded_hal::digital::v2::InputPin<Error = core::convert::Infallible>
 
 #[entry]
 fn main() -> ! {
-    let peripherals = Peripherals::take();
-    let system = peripherals.SYSTEM.split();
-    let mut clocks = ClockControl::boot_defaults(system.clock_control).freeze();
+    let peripherals = esp_hal::init({
+        let mut config = esp_hal::Config::default();
+        config.cpu_clock = CpuClock::max();
+        config
+    });
 
     println!("About to initialize the SPI LED driver ILI9341");
-    let io = IO::new(peripherals.GPIO, peripherals.IO_MUX);
+    let io = Io::new(peripherals.GPIO, peripherals.IO_MUX);
 
-    /* Set corresponding pins */
+    /* Name pins */
+    // esp_hal pins
     let mosi = io.pins.gpio7;
-    let cs = io.pins.gpio2;
-    let rst = io.pins.gpio10;
-    let dc = io.pins.gpio3;
     let sck = io.pins.gpio6;
     let miso = io.pins.gpio9;
+    // embedded_hal pin wrapping
+    let cs = Output::new(io.pins.gpio2, Level::High); // SPI device recommends high
+    let rst = Output::new(io.pins.gpio10, Level::Low);
+    let dc = Output::new(io.pins.gpio3, Level::Low);
 
     /* Configure SPI */
-    let spi = spi::master::Spi::new(
-        peripherals.SPI2,
-        100u32.MHz(),
-        spi::SpiMode::Mode0,
-        &mut clocks,
-    )
-    .with_pins(Some(sck), Some(mosi), Some(miso), Some(cs));
+    // esp spi
+    let spi = spi::master::Spi::new(peripherals.SPI2, 100u32.MHz(), spi::SpiMode::Mode0)
+        .with_pins(sck, mosi, miso, NoPin);
+    // clock needs to go to the device below ¯\_(ツ)_/¯
+    // The clock rete configured here is how it's "communicated" on the bus it seems.
+    // I guess this services a clock hint (it's written to a register).
+    // In the end it's the device that drives the clock by flicking the pin,
+    // so the actual rate will be "elastic".
 
-    let di = SPIInterfaceNoCS::new(spi, dc.into_push_pull_output());
-    let reset = rst.into_push_pull_output();
-    let mut delay = Delay::new(&clocks);
+    // embedded_hal SpiDevice
+    // https://docs.esp-rs.org/esp-hal/esp-hal/0.21.1/esp32c3/esp_hal/spi/master/index.html#exclusive-access-to-the-spi-bus
+    // delay is just a wait-loop, so creating one here has no cost
+    let spiDevice = ExclusiveDevice::new(spi, cs, Delay::new()).unwrap();
 
-    let mut display: mipidsi::Display<
-        SPIInterfaceNoCS<_, GpioPin<Output<PushPull>, 3>>,
-        mipidsi::models::ILI9341Rgb565,
-        GpioPin<Output<PushPull>, 10>,
-    > = mipidsi::Builder::ili9341_rgb565(di)
-        .with_display_size(240 as u16, 320 as u16)
-        .with_framebuffer_size(240 as u16, 320 as u16)
-        .with_orientation(Orientation::LandscapeInverted(true))
-        .with_color_order(ColorOrder::Bgr)
-        .init(&mut delay, Some(reset))
+    let di = SPIInterface::new(spiDevice, dc);
+
+    let mut delay = Delay::new();
+    let mut display = mipidsi::Builder::new(ILI9341Rgb565, di)
+        .display_size(240 as u16, 320 as u16)
+        .orientation(Orientation::new().rotate(Rotation::Deg270))
+        .color_order(ColorOrder::Bgr)
+        .reset_pin(rst)
+        .init(&mut delay)
         .unwrap();
 
     println!("Initialized");
 
-    fn start<
-        DI: display_interface::WriteOnlyDataCommand,
-        RST: embedded_hal::digital::v2::OutputPin,
-    >(
+    fn start<DI: display_interface::WriteOnlyDataCommand, RST: embedded_hal::digital::OutputPin>(
         text_box: Point,
         display: &mut Display<DI, mipidsi::models::ILI9341Rgb565, RST>,
     ) {
@@ -136,9 +138,9 @@ fn main() -> ! {
 
     let text_box = display.bounding_box().center() - Size::new(80, 0);
 
-    let mut button_yellow = Button::new(io.pins.gpio0.into_pull_up_input());
-    let mut button_purple = Button::new(io.pins.gpio1.into_pull_up_input());
-    let mut button_green = Button::new(io.pins.gpio8.into_pull_up_input());
+    let mut button_yellow = Button::new(Input::new(io.pins.gpio0, Pull::Up));
+    let mut button_purple = Button::new(Input::new(io.pins.gpio1, Pull::Up));
+    let mut button_green = Button::new(Input::new(io.pins.gpio8, Pull::Up));
 
     start(text_box, &mut display);
 
