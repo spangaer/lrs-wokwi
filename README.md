@@ -7,6 +7,7 @@ Make the led blink while rendering the new screen.
 This is complicated, because it becomes multi-tasking between blink and
 spi control.
 TBD if it needs a RTOS or something else `¯\_(ツ)_/¯`
+Before going FreeRTOS, check things like embasy(-hal) first.
 
 # Learning Rust (_lrs_)
 
