@@ -1,5 +1,12 @@
 # TODO
-- switch to: riscv32imc-unknown-none-elf
+Make the led blink while rendering the new screen.
+
+- in a first stage just blinking
+- in a second stage blinking the same letters in morse
+
+This is complicated, because it becomes multi-tasking between blink and
+spi control.
+TBD if it needs a RTOS or something else `¯\_(ツ)_/¯`
 
 # Learning Rust (_lrs_)
 
