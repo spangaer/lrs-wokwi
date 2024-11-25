@@ -9,6 +9,8 @@ spi control.
 TBD if it needs a RTOS or something else `¯\_(ツ)_/¯`
 Before going FreeRTOS, check things like embasy(-hal) first.
 
+https://github.com/esp-rs/std-training
+
 # Learning Rust (_lrs_)
 
 The learning rust (_lrs_) series of repositories have no ambition to contain
