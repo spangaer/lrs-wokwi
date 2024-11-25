@@ -25,7 +25,8 @@ use embedded_hal;
 use profont::PROFONT_24_POINT;
 
 use esp_backtrace as _;
-use esp_println::println;
+use esp_println::print; // used by println fixed macro
+use fixes::println;
 
 /* Debouncing algorythm */
 pub enum Event {

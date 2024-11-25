@@ -2,11 +2,6 @@
 name = "name-printer"
 version = "0.1.0"
 edition = "2021"
-resolver = "2"
-
-[profile.dev]
-debug = true    # Symbols are nice and they don't increase the size on Flash
-opt-level = "z"
 
 [dependencies]
 esp-println = { version = "0.12.0", features = ["esp32c3"] }
@@ -27,3 +22,4 @@ embedded-hal-bus = "0.2.0"
 profont = "0.7.0"
 
 names = { path = "../../tools/names" }
+fixes = { path = "../../tools/fixes" }
