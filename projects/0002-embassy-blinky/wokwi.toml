@@ -3,3 +3,4 @@ version = 1
 gdbServerPort = 3333
 elf = "../../target/riscv32imc-unknown-none-elf/release/embassy-blinky"
 firmware = "../../target/riscv32imc-unknown-none-elf/release/embassy-blinky"
+# diagram inspired by https://wokwi.com/projects/363687373852237825
