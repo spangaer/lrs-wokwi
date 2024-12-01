@@ -1,6 +1,7 @@
 {
   "version": 1,
   "editor": "wokwi",
+  "author": "@spangaer",
   "parts": [
     {
       "type": "board-esp32-c3-devkitm-1",
