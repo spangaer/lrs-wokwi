@@ -1,0 +1,21 @@
+[package]
+name = "embassy-blinky-pwm"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+esp-println = { version = "0.12.0", features = ["esp32c3"] }
+esp-hal = { version = "0.22.0", features = ["esp32c3"] }
+esp-backtrace = { version = "0.14.2", features = [
+    "esp32c3",
+    "panic-handler",
+    "println",
+] }
+
+embassy-executor = { version = "0.6.3", features = [] }
+embassy-time = { version = "0.3.2", features = ["generic-queue"] }
+esp-hal-embassy = { version = "0.5.0", features = ["esp32c3", "executors"] }
+fugit = { version = "*" }
+# embedded-hal = "1.0.0"
+
+fixes = { path = "../../tools/fixes" }
