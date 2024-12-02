@@ -7,3 +7,7 @@ Sadly while the code currently in the project _should_ work, it doesn't
 The pulse signal looks to be correct, because the led lights up, but the
 transmission never returns. On channel 0 everything blocks on channel 1
 the other embassy tasks still execute, but the main task stays stuck.
+
+
+As far as I can tell I did everything right:
+https://github.com/esp-rs/esp-hal/blob/v0.22.0/examples/src/bin/embassy_rmt_tx.rs
