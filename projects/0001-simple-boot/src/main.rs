@@ -2,8 +2,8 @@
 #![no_main]
 use esp_backtrace as _;
 use esp_hal::{clock::CpuClock, delay::Delay, prelude::entry};
-use esp_println::print; // used by println fixed macro
-use fixes::println;
+use esp_println::{print, println};
+use fixes::enable_lf_nl_mode;
 
 #[entry]
 fn main() -> ! {
@@ -12,6 +12,8 @@ fn main() -> ! {
         config.cpu_clock = CpuClock::max();
         config
     });
+
+    enable_lf_nl_mode!();
 
     let delay = Delay::new();
 

@@ -9,6 +9,7 @@ use esp_hal::rmt::{PulseCode, Rmt, TxChannelAsync, TxChannelConfig, TxChannelCre
 use esp_hal::{prelude::*, timer::timg::TimerGroup};
 use esp_hal_embassy as embassy;
 use esp_println::{print, println};
+use fixes::enable_lf_nl_mode;
 use fugit::Duration as FDuration;
 
 fn is_done() -> bool {
@@ -20,7 +21,7 @@ fn is_done() -> bool {
 async fn one_second_task(mut pin: Output<'static>) {
     let mut count = 0;
     loop {
-        esp_println::println!("1s Task Count: {}", count);
+        println!("1s Task Count: {}", count);
         count += 1;
         Timer::after(Duration::from_millis(1_000)).await;
         match pin.output_level() {
@@ -35,7 +36,7 @@ async fn one_second_task(mut pin: Output<'static>) {
 async fn two_second_task() {
     let mut count = 0;
     loop {
-        esp_println::println!("2s Task Count: {}", count);
+        println!("2s Task Count: {}", count);
         count += 1;
         Timer::after(Duration::from_millis(2_000)).await;
     }
@@ -45,7 +46,7 @@ async fn two_second_task() {
 async fn three_second_task() {
     let mut count = 0;
     loop {
-        esp_println::println!("3s Task Count: {}", count);
+        println!("3s Task Count: {}", count);
         count += 1;
         Timer::after(Duration::from_millis(3_000)).await;
     }
@@ -72,6 +73,8 @@ async fn main(spawner: Spawner) {
         config.cpu_clock = CpuClock::max();
         config
     });
+
+    enable_lf_nl_mode!();
 
     let timg0 = TimerGroup::new(peripherals.TIMG0);
     embassy::init(timg0.timer0);
@@ -121,7 +124,7 @@ async fn main(spawner: Spawner) {
 
     let mut count = 0;
     loop {
-        esp_println::println!("Main Task Count: {}", count);
+        println!("Main Task Count: {}", count);
         count += 1;
 
         // never returns :(

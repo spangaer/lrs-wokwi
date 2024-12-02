@@ -9,13 +9,14 @@ use esp_hal::gpio::{Level, Output};
 // use embedded_hal::digital::OutputPin;
 use esp_hal::{prelude::*, timer::timg::TimerGroup};
 use esp_hal_embassy as embassy;
-use esp_println::print;
+use esp_println::{print, println};
+use fixes::enable_lf_nl_mode;
 
 #[embassy_executor::task]
 async fn one_second_task(mut pin: Output<'static>) {
     let mut count = 0;
     loop {
-        esp_println::println!("Spawn Task Count: {}", count);
+        println!("Spawn Task Count: {}", count);
         count += 1;
         Timer::after(Duration::from_millis(1_000)).await;
         match pin.output_level() {
@@ -33,7 +34,7 @@ async fn main(spawner: Spawner) {
         config
     });
 
-    // let io = Io::new(peripherals.IO_MUX);
+    enable_lf_nl_mode!();
 
     let timg0 = TimerGroup::new(peripherals.TIMG0);
     embassy::init(timg0.timer0);
@@ -42,12 +43,9 @@ async fn main(spawner: Spawner) {
 
     spawner.spawn(one_second_task(ledpin)).unwrap();
 
-    // This line is for Wokwi only so that the console output is formatted correctly
-    print!("\x1b[20h");
-
     let mut count = 0;
     loop {
-        esp_println::println!("Main Task Count: {}", count);
+        println!("Main Task Count: {}", count);
         count += 1;
         Timer::after(Duration::from_millis(5_000)).await;
     }

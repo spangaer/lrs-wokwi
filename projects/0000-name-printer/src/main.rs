@@ -25,8 +25,8 @@ use embedded_hal;
 use profont::PROFONT_24_POINT;
 
 use esp_backtrace as _;
-use esp_println::print; // used by println fixed macro
-use fixes::println;
+use esp_println::{print, println};
+use fixes::enable_lf_nl_mode;
 
 /* Debouncing algorythm */
 pub enum Event {
@@ -80,6 +80,8 @@ fn main() -> ! {
         config.cpu_clock = CpuClock::max();
         config
     });
+
+    enable_lf_nl_mode!();
 
     println!("About to initialize the SPI LED driver ILI9341");
     // let io = Io::new(peripherals.GPIO, peripherals.IO_MUX);

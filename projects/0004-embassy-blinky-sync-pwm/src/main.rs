@@ -10,6 +10,7 @@ use esp_hal::rmt::{
 use esp_hal::{prelude::*, timer::timg::TimerGroup};
 use esp_hal_embassy as embassy;
 use esp_println::{print, println};
+use fixes::enable_lf_nl_mode;
 use fugit::Duration as FDuration;
 use once_cell::sync::Lazy;
 
@@ -57,11 +58,10 @@ async fn main(spawner: Spawner) {
         config
     });
 
+    enable_lf_nl_mode!();
+
     let timg0 = TimerGroup::new(peripherals.TIMG0);
     embassy::init(timg0.timer0);
-
-    // This line is for Wokwi only so that the console output is formatted correctly
-    print!("\x1b[20h");
 
     let rmt = Rmt::new(peripherals.RMT, RMT_TICK_RATE_HZ.Hz()).unwrap();
 
