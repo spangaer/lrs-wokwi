@@ -18,7 +18,10 @@ esp-hal-embassy = { version = "0.5.0", features = ["esp32c3", "executors"] }
 fugit = { version = "*" }
 # embedded-hal = "1.0.0"
 
-# once_cell = { version = "1.20", default-features = false, features = ["race"] }
+#https://github.com/matklad/once_cell/blob/4fbd4a53509ca59c8e09efc2ab0a22f21de70f7e/Cargo.toml#L57
+once_cell = { version = "1.20", default-features = false, features = [
+    "critical-section",
+] }
 # static_cell = "2.1"
 
 fixes = { path = "../../tools/fixes" }

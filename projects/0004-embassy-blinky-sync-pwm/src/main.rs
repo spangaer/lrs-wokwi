@@ -11,12 +11,13 @@ use esp_hal::{prelude::*, timer::timg::TimerGroup};
 use esp_hal_embassy as embassy;
 use esp_println::{print, println};
 use fugit::Duration as FDuration;
+use once_cell::sync::Lazy;
 
 #[embassy_executor::task]
 async fn one_second_task() {
     let mut count = 0;
     loop {
-        esp_println::println!("1s Task Count: {}", count);
+        println!("1s Task Count: {}", count);
         count += 1;
         Timer::after(Duration::from_millis(1_000)).await;
     }
@@ -26,7 +27,7 @@ async fn one_second_task() {
 async fn two_second_task() {
     let mut count = 0;
     loop {
-        esp_println::println!("2s Task Count: {}", count);
+        println!("2s Task Count: {}", count);
         count += 1;
         Timer::after(Duration::from_millis(2_000)).await;
     }
@@ -36,7 +37,7 @@ async fn two_second_task() {
 async fn three_second_task() {
     let mut count = 0;
     loop {
-        esp_println::println!("3s Task Count: {}", count);
+        println!("3s Task Count: {}", count);
         count += 1;
         Timer::after(Duration::from_millis(3_000)).await;
     }
@@ -81,7 +82,7 @@ async fn main(spawner: Spawner) {
 
     let mut count = 0;
     loop {
-        esp_println::println!("Main Task Count: {}", count);
+        println!("Main Task Count: {}", count);
         count += 1;
 
         channel = set_pixel(channel, Rgb::RED).await.unwrap();
@@ -109,45 +110,22 @@ fn pulse_from_intervals(nanos_high: u32, nanos_low: u32) -> u32 {
     <u32 as PulseCode>::new(true, ticks_high, false, ticks_low)
 }
 
-// best code inited static I could come up with so far
+// avoid "unsafe" by using once_cell_::sync::Lazy with critical-section feature
 
-fn pwm_zero() -> u32 {
-    unsafe {
-        static mut PWM_ZERO: u32 = 0;
-
-        if PWM_ZERO == 0 {
-            println!("init zero");
-            PWM_ZERO = pulse_from_intervals(PWM_ZERO_HIGH_NS, PWM_ZERO_LOW_NS);
-        }
-
-        PWM_ZERO
-    }
-}
-
-fn pwm_one() -> u32 {
-    unsafe {
-        static mut PWM_ONE: u32 = 0;
-
-        if PWM_ONE == 0 {
-            println!("init one");
-            PWM_ONE = pulse_from_intervals(PWM_ONE_HIGH_NS, PWM_ONE_LOW_NS);
-        }
-
-        PWM_ONE
-    }
-}
+static PWM_ZERO: Lazy<u32> = Lazy::new(|| pulse_from_intervals(PWM_ZERO_HIGH_NS, PWM_ZERO_LOW_NS));
+static PWM_ONE: Lazy<u32> = Lazy::new(|| pulse_from_intervals(PWM_ONE_HIGH_NS, PWM_ONE_LOW_NS));
 
 async fn set_pixel<C: TxChannel>(channel: C, color: Rgb) -> Result<C, (RmtError, C)> {
     let bits: u32 = color.into();
 
-    let mut pixel_data = [pwm_zero(); PWM_RGB_BITS as usize + 1];
+    let mut pixel_data = [*PWM_ZERO; PWM_RGB_BITS as usize + 1];
     pixel_data[pixel_data.len() - 1] = PulseCode::empty(); // end marker
 
     for i in 0..PWM_RGB_BITS as usize {
         let bit = (bits >> i) & 1; // Extract the i-th bit
 
         if bit > 0 {
-            pixel_data[i] = pwm_one();
+            pixel_data[i] = *PWM_ONE;
         }
     }
 
