@@ -82,22 +82,24 @@ fn main() -> ! {
     });
 
     println!("About to initialize the SPI LED driver ILI9341");
-    let io = Io::new(peripherals.GPIO, peripherals.IO_MUX);
+    // let io = Io::new(peripherals.GPIO, peripherals.IO_MUX);
 
     /* Name pins */
     // esp_hal pins
-    let mosi = io.pins.gpio7;
-    let sck = io.pins.gpio6;
-    let miso = io.pins.gpio9;
+    let mosi = peripherals.GPIO7;
+    let sck = peripherals.GPIO6;
+    let miso = peripherals.GPIO9;
     // embedded_hal pin wrapping
-    let cs = Output::new(io.pins.gpio2, Level::High); // SPI device recommends high
-    let rst = Output::new(io.pins.gpio10, Level::Low);
-    let dc = Output::new(io.pins.gpio3, Level::Low);
+    let cs = Output::new(peripherals.GPIO2, Level::High); // SPI device recommends high
+    let rst = Output::new(peripherals.GPIO10, Level::Low);
+    let dc = Output::new(peripherals.GPIO3, Level::Low);
 
     /* Configure SPI */
     // esp spi
-    let spi = spi::master::Spi::new(peripherals.SPI2, 100u32.MHz(), spi::SpiMode::Mode0)
-        .with_pins(sck, mosi, miso, NoPin);
+    let spi = spi::master::Spi::new(peripherals.SPI2)
+        .with_sck(sck)
+        .with_mosi(mosi)
+        .with_miso(miso);
     // clock needs to go to the device below ¯\_(ツ)_/¯
     // The clock rete configured here is how it's "communicated" on the bus it seems.
     // I guess this services a clock hint (it's written to a register).
@@ -139,9 +141,9 @@ fn main() -> ! {
 
     let text_box = display.bounding_box().center() - Size::new(80, 0);
 
-    let mut button_yellow = Button::new(Input::new(io.pins.gpio0, Pull::Up));
-    let mut button_purple = Button::new(Input::new(io.pins.gpio1, Pull::Up));
-    let mut button_green = Button::new(Input::new(io.pins.gpio8, Pull::Up));
+    let mut button_yellow = Button::new(Input::new(peripherals.GPIO0, Pull::Up));
+    let mut button_purple = Button::new(Input::new(peripherals.GPIO1, Pull::Up));
+    let mut button_green = Button::new(Input::new(peripherals.GPIO8, Pull::Up));
 
     start(text_box, &mut display);
 
