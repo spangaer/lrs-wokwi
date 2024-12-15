@@ -1,0 +1,10 @@
+[package]
+name = "neopixel"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+esp-hal = { workspace = true, features = ["esp32c3"] }
+fugit = { workspace = true }
+embassy-time = { workspace = true }
