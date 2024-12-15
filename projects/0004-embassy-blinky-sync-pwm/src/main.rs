@@ -1,6 +1,8 @@
 #![no_std]
 #![no_main]
 
+use core::iter;
+
 use embassy_executor::Spawner;
 use embassy_time::{Duration, Timer};
 use esp_backtrace as _;
@@ -84,7 +86,10 @@ async fn main(spawner: Spawner) {
         println!("Main Task Count: {}", count);
         count += 1;
 
-        channel = sender.set_pixel(channel, Rgb::RED).await.unwrap();
+        channel = sender
+            .set_pixels(channel, iter::once(Rgb::RED))
+            .await
+            .unwrap();
         Timer::after(Duration::from_millis(1_000)).await;
 
         channel = sender.set_pixel(channel, Rgb::GREEN).await.unwrap();

@@ -13,6 +13,7 @@ const PWM_RGB_BITS: u32 = 8 * 3;
 const PWM_RGBSEND_US: u64 = (PWM_RGB_BITS * PWM_PERIOD_NS / 1000) as u64;
 const NEOPX_LATCH_US: u64 = 55 as u64;
 
+/// Note: passing the channel as a function param makes for clean borrow check handling
 pub struct PixelSender<const RMT_TICK_RATE_HZ: u32> {
     pwm_zero: u32,
     pwm_one: u32,
@@ -72,6 +73,21 @@ impl<const RMT_TICK_RATE_HZ: u32> PixelSender<RMT_TICK_RATE_HZ> {
         Ok(out)
     }
 
+    /// Will transmit to daisy chained Neopixels and let them latch
+    pub async fn set_pixels<C: TxChannel>(
+        &self,
+        channel: C,
+        data: impl Iterator<Item = Rgb>,
+    ) -> Result<C, (RmtError, C)> {
+        let mut out = channel;
+
+        for pixel in data {
+            out = self.encode_and_send_pixel(out, pixel).await?;
+        }
+
+        Self::latch().await;
+        Ok(out)
+    }
 }
 
 #[derive(Debug, Clone, Copy)]
