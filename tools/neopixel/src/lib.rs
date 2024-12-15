@@ -11,6 +11,7 @@ const PWM_ONE_HIGH_NS: u32 = 900;
 const PWM_ONE_LOW_NS: u32 = PWM_PERIOD_NS - PWM_ONE_HIGH_NS;
 const PWM_RGB_BITS: u32 = 8 * 3;
 const PWM_RGBSEND_US: u64 = (PWM_RGB_BITS * PWM_PERIOD_NS / 1000) as u64;
+const NEOPX_LATCH_US: u64 = 55 as u64;
 
 pub struct PixelSender<const RMT_TICK_RATE_HZ: u32> {
     pwm_zero: u32,
@@ -31,7 +32,11 @@ impl<const RMT_TICK_RATE_HZ: u32> PixelSender<RMT_TICK_RATE_HZ> {
         <u32 as PulseCode>::new(true, ticks_high, false, ticks_low)
     }
 
-    pub async fn set_pixel<C: TxChannel>(
+    async fn latch() {
+        Timer::after(Duration::from_micros(NEOPX_LATCH_US)).await;
+    }
+
+    async fn encode_and_send_pixel<C: TxChannel>(
         &self,
         channel: C,
         color: Rgb,
@@ -56,6 +61,17 @@ impl<const RMT_TICK_RATE_HZ: u32> PixelSender<RMT_TICK_RATE_HZ> {
 
         transaction.wait()
     }
+
+    pub async fn set_pixel<C: TxChannel>(
+        &self,
+        channel: C,
+        color: Rgb,
+    ) -> Result<C, (RmtError, C)> {
+        let out = self.encode_and_send_pixel(channel, color).await?;
+        Self::latch().await;
+        Ok(out)
+    }
+
 }
 
 #[derive(Debug, Clone, Copy)]
