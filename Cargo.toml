@@ -24,6 +24,7 @@ esp-backtrace = "0.14.2"
 
 embassy-executor = "0.6.3"
 embassy-time = "0.3.2"
+embassy-futures = "0.1.1"
 esp-hal-embassy = "0.5.0"
 
 fugit = "0.3.7"

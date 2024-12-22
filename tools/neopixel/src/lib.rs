@@ -1,5 +1,7 @@
 #![no_std]
 
+use core::iter;
+
 use embassy_time::{Duration, Timer};
 use esp_hal::rmt::{Error as RmtError, PulseCode, TxChannel};
 use fugit::Duration as FDuration;
@@ -10,7 +12,8 @@ const PWM_ZERO_LOW_NS: u32 = PWM_PERIOD_NS - PWM_ZERO_HIGH_NS;
 const PWM_ONE_HIGH_NS: u32 = 900;
 const PWM_ONE_LOW_NS: u32 = PWM_PERIOD_NS - PWM_ONE_HIGH_NS;
 const PWM_RGB_BITS: u32 = 8 * 3;
-const PWM_RGBSEND_US: u64 = (PWM_RGB_BITS * PWM_PERIOD_NS / 1000) as u64;
+const PWM_RGB_DATAFRAME: usize = PWM_RGB_BITS as usize + 1;
+// const PWM_RGBSEND_US: u64 = (PWM_RGB_BITS * PWM_PERIOD_NS / 1000) as u64;
 const NEOPX_LATCH_US: u64 = 55 as u64;
 
 /// Note: passing the channel as a function param makes for clean borrow check handling
@@ -37,14 +40,10 @@ impl<const RMT_TICK_RATE_HZ: u32> PixelSender<RMT_TICK_RATE_HZ> {
         Timer::after(Duration::from_micros(NEOPX_LATCH_US)).await;
     }
 
-    async fn encode_and_send_pixel<C: TxChannel>(
-        &self,
-        channel: C,
-        color: Rgb,
-    ) -> Result<C, (RmtError, C)> {
+    fn encode_pixel(&self, color: Rgb) -> [u32; PWM_RGB_DATAFRAME] {
         let bits: u32 = color.into();
 
-        let mut pixel_data = [self.pwm_zero; PWM_RGB_BITS as usize + 1];
+        let mut pixel_data = [self.pwm_zero; PWM_RGB_DATAFRAME];
         pixel_data[pixel_data.len() - 1] = PulseCode::empty(); // end marker
 
         for i in 0..PWM_RGB_BITS as usize {
@@ -56,12 +55,7 @@ impl<const RMT_TICK_RATE_HZ: u32> PixelSender<RMT_TICK_RATE_HZ> {
             }
         }
 
-        // FIXME proper error handling
-        let transaction = channel.transmit(&pixel_data).expect("transmit failed");
-
-        Timer::after(Duration::from_micros(PWM_RGBSEND_US)).await;
-
-        transaction.wait()
+        pixel_data
     }
 
     pub async fn set_pixel<C: TxChannel>(
@@ -69,9 +63,7 @@ impl<const RMT_TICK_RATE_HZ: u32> PixelSender<RMT_TICK_RATE_HZ> {
         channel: C,
         color: Rgb,
     ) -> Result<C, (RmtError, C)> {
-        let out = self.encode_and_send_pixel(channel, color).await?;
-        Self::latch().await;
-        Ok(out)
+        self.set_pixels(channel, iter::once(color)).await
     }
 
     /// Will transmit to daisy chained Neopixels and let them latch
@@ -83,12 +75,57 @@ impl<const RMT_TICK_RATE_HZ: u32> PixelSender<RMT_TICK_RATE_HZ> {
         let mut out = channel;
 
         for pixel in data {
-            out = self.encode_and_send_pixel(out, pixel).await?;
+            let pixel_data = self.encode_pixel(pixel);
+            out = out.transmit(&pixel_data).unwrap().wait()?;
         }
 
         Self::latch().await;
         Ok(out)
     }
+
+    // /// Will transmit to daisy chained Neopixels and let them latch
+    // ///
+    // /// This implementation tried to parallelize the pixel calc with
+    // /// rmt transmission, but that doesn't seem to fly in wokwi, the pixel simulation
+    // /// seems to colide with the pixel simulation etc. So no form of yielding works.
+    // /// The parrallel pixel calculation works the fisrt time around but not for next frames.
+    // pub async fn set_pixels<C: TxChannel>(
+    //     &self,
+    //     channel: C,
+    //     data: impl Iterator<Item = Rgb>,
+    // ) -> Result<C, (RmtError, C)> {
+    //     let mut out = Some(channel);
+    //     let mut pixel_data;
+    //     let mut waiter: Option<SingleShotTxTransaction<'_, C>> = None;
+
+    //     for pixel in data {
+    //         let new_data = self.encode_pixel(pixel);
+
+    //         match waiter {
+    //             None => (),
+    //             Some(w) => {
+    //                 out = Some(w.wait()?);
+    //                 // waiter = None;
+    //             }
+    //         }
+
+    //         pixel_data = new_data;
+
+    //         waiter = Some(out.unwrap().transmit(&pixel_data).unwrap());
+    //         out = None;
+    //     }
+
+    //     match waiter {
+    //         None => (),
+    //         Some(w) => {
+    //             out = Some(w.wait()?);
+    //             // waiter = None;
+    //         }
+    //     }
+
+    //     Self::latch().await;
+    //     Ok(out.unwrap())
+    // }
 }
 
 #[derive(Debug, Clone, Copy)]

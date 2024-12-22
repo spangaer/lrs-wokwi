@@ -6,5 +6,7 @@ edition = "2021"
 
 [dependencies]
 esp-hal = { workspace = true, features = ["esp32c3"] }
+# esp-println = { workspace = true, features = ["esp32c3"] }
 fugit = { workspace = true }
 embassy-time = { workspace = true }
+# embassy-futures = { workspace = true }

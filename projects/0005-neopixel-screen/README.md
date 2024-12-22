@@ -1,1 +1,1 @@
-Neopixel array source: https://wokwi.com/projects/389910808186606593
+Neopixel array (16 x 32) source: https://wokwi.com/projects/389910808186606593

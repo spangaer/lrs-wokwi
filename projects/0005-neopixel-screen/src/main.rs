@@ -48,6 +48,7 @@ async fn three_second_task() {
 /// higher. esp32(s) requires 80 Mhz btw. For esp32-c, why not be kind
 /// to Wokwi, right?
 const RMT_TICK_RATE_HZ: u32 = 20_000_000;
+const PIXELS: usize = 16 * 32;
 
 #[main]
 async fn main(spawner: Spawner) {
@@ -87,15 +88,23 @@ async fn main(spawner: Spawner) {
         count += 1;
 
         channel = sender
-            .set_pixels(channel, iter::once(Rgb::BLACK))
+            .set_pixels(channel, iter::repeat(Rgb::BLACK).take(PIXELS))
             .await
             .unwrap();
         Timer::after(Duration::from_millis(1_000)).await;
 
-        channel = sender.set_pixel(channel, Rgb::PURPLE).await.unwrap();
-        Timer::after(Duration::from_millis(1_000)).await;
-
-        channel = sender.set_pixel(channel, Rgb::YELLOW).await.unwrap();
+        channel = sender
+            .set_pixels(
+                channel,
+                iter::repeat(if count % 2 == 0 {
+                    Rgb::PURPLE
+                } else {
+                    Rgb::YELLOW
+                })
+                .take(PIXELS),
+            )
+            .await
+            .unwrap();
         Timer::after(Duration::from_millis(1_000)).await;
     }
 }

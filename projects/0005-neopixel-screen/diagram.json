@@ -8208,6 +8208,18 @@
       [
         "v0"
       ]
+    ],
+    [
+      "ctrl:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "ctrl:RX",
+      "$serialMonitor:TX",
+      "",
+      []
     ]
   ],
   "dependencies": {}
