@@ -48,7 +48,8 @@ impl<const RMT_TICK_RATE_HZ: u32> PixelSender<RMT_TICK_RATE_HZ> {
         pixel_data[pixel_data.len() - 1] = PulseCode::empty(); // end marker
 
         for i in 0..PWM_RGB_BITS as usize {
-            let bit = (bits >> i) & 1; // Extract the i-th bit
+            // Extract the i-th bit
+            let bit = (bits >> (PWM_RGB_BITS as usize - 1 - i)) & 1;
 
             if bit > 0 {
                 pixel_data[i] = self.pwm_one;
@@ -98,9 +99,20 @@ pub struct Rgb {
 }
 
 impl Rgb {
+    pub const BLACK: Rgb = Self { r: 0, g: 0, b: 0 };
     pub const RED: Rgb = Self { r: 255, g: 0, b: 0 };
     pub const GREEN: Rgb = Self { r: 0, g: 255, b: 0 };
     pub const BLUE: Rgb = Self { r: 0, g: 0, b: 255 };
+    pub const YELLOW: Rgb = Self {
+        r: 255,
+        g: 255,
+        b: 0,
+    };
+    pub const PURPLE: Rgb = Self {
+        r: 120,
+        g: 60,
+        b: 255,
+    };
 
     #[allow(unused)]
     pub fn new(r: u8, g: u8, b: u8) -> Self {
@@ -111,6 +123,6 @@ impl Rgb {
 impl From<Rgb> for u32 {
     /// Convert RGB to u32 color value
     fn from(rgb: Rgb) -> Self {
-        ((rgb.r as u32) << 16) | ((rgb.g as u32) << 8) | rgb.b as u32
+        ((rgb.g as u32) << 16) | ((rgb.r as u32) << 8) | rgb.b as u32
     }
 }

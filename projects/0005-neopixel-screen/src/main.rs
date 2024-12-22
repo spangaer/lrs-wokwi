@@ -87,15 +87,15 @@ async fn main(spawner: Spawner) {
         count += 1;
 
         channel = sender
-            .set_pixels(channel, iter::once(Rgb::RED))
+            .set_pixels(channel, iter::once(Rgb::BLACK))
             .await
             .unwrap();
         Timer::after(Duration::from_millis(1_000)).await;
 
-        channel = sender.set_pixel(channel, Rgb::GREEN).await.unwrap();
+        channel = sender.set_pixel(channel, Rgb::PURPLE).await.unwrap();
         Timer::after(Duration::from_millis(1_000)).await;
 
-        channel = sender.set_pixel(channel, Rgb::BLUE).await.unwrap();
+        channel = sender.set_pixel(channel, Rgb::YELLOW).await.unwrap();
         Timer::after(Duration::from_millis(1_000)).await;
     }
 }
