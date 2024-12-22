@@ -1,0 +1,24 @@
+[package]
+name = "neopixel-screen"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+esp-println = { workspace = true, features = ["esp32c3"] }
+esp-hal = { workspace = true, features = ["esp32c3"] }
+esp-backtrace = { workspace = true, features = [
+    "esp32c3",
+    "panic-handler",
+    "println",
+] }
+
+embassy-executor = { workspace = true, features = [] }
+embassy-time = { workspace = true, features = ["generic-queue"] }
+esp-hal-embassy = { workspace = true, features = ["esp32c3", "executors"] }
+
+#https://github.com/matklad/once_cell/blob/4fbd4a53509ca59c8e09efc2ab0a22f21de70f7e/Cargo.toml#L57
+# once_cell = { workspace = true, features = ["critical-section"] }
+# static_cell = "2.1"
+
+fixes = { path = "../../tools/fixes" }
+neopixel = { path = "../../tools/neopixel" }

@@ -1,0 +1,8214 @@
+{
+  "version": 1,
+  "author": "@spangaer",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-c3-devkitm-1",
+      "id": "ctrl",
+      "top": -380.4,
+      "left": -67.7,
+      "rotate": -90,
+      "attrs": {
+        "builder": "rust-nostd-esp"
+      }
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb1",
+      "top": -230.2,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb2",
+      "top": -201.4,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb3",
+      "top": -172.6,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb4",
+      "top": -143.8,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb5",
+      "top": -115,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb6",
+      "top": -86.2,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb7",
+      "top": -57.4,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb8",
+      "top": -28.6,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb9",
+      "top": 0.2,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb10",
+      "top": 29,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb11",
+      "top": 57.8,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb12",
+      "top": 86.6,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb13",
+      "top": 115.4,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb14",
+      "top": 144.2,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb15",
+      "top": 173,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb16",
+      "top": 201.8,
+      "left": -158.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb17",
+      "top": 201.8,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb18",
+      "top": 173,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb19",
+      "top": 144.2,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb20",
+      "top": 115.4,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb21",
+      "top": 86.6,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb22",
+      "top": 57.8,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb23",
+      "top": 29,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb24",
+      "top": 0.2,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb25",
+      "top": -28.6,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb26",
+      "top": -57.4,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb27",
+      "top": -86.2,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb28",
+      "top": -115,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb29",
+      "top": -143.8,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb30",
+      "top": -172.6,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb31",
+      "top": -201.4,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb32",
+      "top": -230.2,
+      "left": -129.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb33",
+      "top": -230.2,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb34",
+      "top": -201.4,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb35",
+      "top": -172.6,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb36",
+      "top": -143.8,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb37",
+      "top": -115,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb38",
+      "top": -86.2,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb39",
+      "top": -57.4,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb40",
+      "top": -28.6,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb41",
+      "top": 0.2,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb42",
+      "top": 29,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb43",
+      "top": 57.8,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb44",
+      "top": 86.6,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb45",
+      "top": 115.4,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb46",
+      "top": 144.2,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb47",
+      "top": 173,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb48",
+      "top": 201.8,
+      "left": -100.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb49",
+      "top": 201.8,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb50",
+      "top": 173,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb51",
+      "top": 144.2,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb52",
+      "top": 115.4,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb53",
+      "top": 86.6,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb54",
+      "top": 57.8,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb55",
+      "top": 29,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb56",
+      "top": 0.2,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb57",
+      "top": -28.6,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb58",
+      "top": -57.4,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb59",
+      "top": -86.2,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb60",
+      "top": -115,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb61",
+      "top": -143.8,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb62",
+      "top": -172.6,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb63",
+      "top": -201.4,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb64",
+      "top": -230.2,
+      "left": -71.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb65",
+      "top": -230.2,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb66",
+      "top": -201.4,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb67",
+      "top": -172.6,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb68",
+      "top": -143.8,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb69",
+      "top": -115,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb70",
+      "top": -86.2,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb71",
+      "top": -57.4,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb72",
+      "top": -28.6,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb73",
+      "top": 0.2,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb74",
+      "top": 29,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb75",
+      "top": 57.8,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb76",
+      "top": 86.6,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb77",
+      "top": 115.4,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb78",
+      "top": 144.2,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb79",
+      "top": 173,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb80",
+      "top": 201.8,
+      "left": -42.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb81",
+      "top": 201.8,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb82",
+      "top": 173,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb83",
+      "top": 144.2,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb84",
+      "top": 115.4,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb85",
+      "top": 86.6,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb86",
+      "top": 57.8,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb87",
+      "top": 29,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb88",
+      "top": 0.2,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb89",
+      "top": -28.6,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb90",
+      "top": -57.4,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb91",
+      "top": -86.2,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb92",
+      "top": -115,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb93",
+      "top": -143.8,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb94",
+      "top": -172.6,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb95",
+      "top": -201.4,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb96",
+      "top": -230.2,
+      "left": -14.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb97",
+      "top": -230.2,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb98",
+      "top": -201.4,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb99",
+      "top": -172.6,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb100",
+      "top": -143.8,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb101",
+      "top": -115,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb102",
+      "top": -86.2,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb103",
+      "top": -57.4,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb104",
+      "top": -28.6,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb105",
+      "top": 0.2,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb106",
+      "top": 29,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb107",
+      "top": 57.8,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb108",
+      "top": 86.6,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb109",
+      "top": 115.4,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb110",
+      "top": 144.2,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb111",
+      "top": 173,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb112",
+      "top": 201.8,
+      "left": 14.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb113",
+      "top": 201.8,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb114",
+      "top": 173,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb115",
+      "top": 144.2,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb116",
+      "top": 115.4,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb117",
+      "top": 86.6,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb118",
+      "top": 57.8,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb119",
+      "top": 29,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb120",
+      "top": 0.2,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb121",
+      "top": -28.6,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb122",
+      "top": -57.4,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb123",
+      "top": -86.2,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb124",
+      "top": -115,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb125",
+      "top": -143.8,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb126",
+      "top": -172.6,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb127",
+      "top": -201.4,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb128",
+      "top": -230.2,
+      "left": 43.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb129",
+      "top": -230.2,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb130",
+      "top": -201.4,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb131",
+      "top": -172.6,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb132",
+      "top": -143.8,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb133",
+      "top": -115,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb134",
+      "top": -86.2,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb135",
+      "top": -57.4,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb136",
+      "top": -28.6,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb137",
+      "top": 0.2,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb138",
+      "top": 29,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb139",
+      "top": 57.8,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb140",
+      "top": 86.6,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb141",
+      "top": 115.4,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb142",
+      "top": 144.2,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb143",
+      "top": 173,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb144",
+      "top": 201.8,
+      "left": 72.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb145",
+      "top": 201.8,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb146",
+      "top": 173,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb147",
+      "top": 144.2,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb148",
+      "top": 115.4,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb149",
+      "top": 86.6,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb150",
+      "top": 57.8,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb151",
+      "top": 29,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb152",
+      "top": 0.2,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb153",
+      "top": -28.8,
+      "left": 98.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb154",
+      "top": -57.4,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb155",
+      "top": -86.2,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb156",
+      "top": -115,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb157",
+      "top": -143.8,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb158",
+      "top": -172.6,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb159",
+      "top": -201.4,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb160",
+      "top": -230.2,
+      "left": 101.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb161",
+      "top": -230.2,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb162",
+      "top": -201.4,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb163",
+      "top": -172.6,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb164",
+      "top": -143.8,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb165",
+      "top": -115,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb166",
+      "top": -86.2,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb167",
+      "top": -57.4,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb168",
+      "top": -28.6,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb169",
+      "top": 0.2,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb170",
+      "top": 29,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb171",
+      "top": 57.8,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb172",
+      "top": 86.6,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb173",
+      "top": 115.4,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb174",
+      "top": 144.2,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb175",
+      "top": 173,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb176",
+      "top": 201.8,
+      "left": 129.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb177",
+      "top": 201.8,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb178",
+      "top": 173,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb179",
+      "top": 144.2,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb180",
+      "top": 115.4,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb181",
+      "top": 86.6,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb182",
+      "top": 57.8,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb183",
+      "top": 29,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb184",
+      "top": 0.2,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb185",
+      "top": -28.6,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb186",
+      "top": -57.4,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb187",
+      "top": -86.2,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb188",
+      "top": -115,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb189",
+      "top": -143.8,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb190",
+      "top": -172.6,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb191",
+      "top": -201.4,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb192",
+      "top": -230.2,
+      "left": 158.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb193",
+      "top": -230.2,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb194",
+      "top": -201.4,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb195",
+      "top": -172.6,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb196",
+      "top": -143.8,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb197",
+      "top": -115,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb198",
+      "top": -86.2,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb199",
+      "top": -57.4,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb200",
+      "top": -28.6,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb201",
+      "top": 0.2,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb202",
+      "top": 29,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb203",
+      "top": 57.8,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb204",
+      "top": 86.6,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb205",
+      "top": 115.4,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb206",
+      "top": 144.2,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb207",
+      "top": 173,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb208",
+      "top": 201.8,
+      "left": 187.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb209",
+      "top": 201.8,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb210",
+      "top": 173,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb211",
+      "top": 144.2,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb212",
+      "top": 115.4,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb213",
+      "top": 86.6,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb214",
+      "top": 57.8,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb215",
+      "top": 29,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb216",
+      "top": 0.2,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb217",
+      "top": -28.6,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb218",
+      "top": -57.4,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb219",
+      "top": -86.2,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb220",
+      "top": -115,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb221",
+      "top": -143.8,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb222",
+      "top": -172.6,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb223",
+      "top": -201.4,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb224",
+      "top": -230.2,
+      "left": 216.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb225",
+      "top": -230.2,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb226",
+      "top": -201.4,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb227",
+      "top": -172.6,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb228",
+      "top": -143.8,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb229",
+      "top": -115,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb230",
+      "top": -86.2,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb231",
+      "top": -57.4,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb232",
+      "top": -28.6,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb233",
+      "top": 0.2,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb234",
+      "top": 29,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb235",
+      "top": 57.8,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb236",
+      "top": 86.6,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb237",
+      "top": 115.4,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb238",
+      "top": 144.2,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb239",
+      "top": 173,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb240",
+      "top": 201.8,
+      "left": 245.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb241",
+      "top": 201.8,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb242",
+      "top": 173,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb243",
+      "top": 144.2,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb244",
+      "top": 115.4,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb245",
+      "top": 86.6,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb246",
+      "top": 57.8,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb247",
+      "top": 29,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb248",
+      "top": 0.2,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb249",
+      "top": -28.6,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb250",
+      "top": -57.4,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb251",
+      "top": -86.2,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb252",
+      "top": -115,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb253",
+      "top": -143.8,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb254",
+      "top": -172.6,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb255",
+      "top": -201.4,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb256",
+      "top": -230.2,
+      "left": 273.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb257",
+      "top": -230.2,
+      "left": 302.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb258",
+      "top": -201.4,
+      "left": 302.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb259",
+      "top": -172.6,
+      "left": 302.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb260",
+      "top": -143.8,
+      "left": 302.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb261",
+      "top": -115,
+      "left": 302.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb262",
+      "top": -86.2,
+      "left": 302.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb263",
+      "top": -57.4,
+      "left": 302.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb264",
+      "top": -28.6,
+      "left": 302.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb265",
+      "top": -28.6,
+      "left": 331.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb266",
+      "top": -57.4,
+      "left": 331.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb267",
+      "top": -86.2,
+      "left": 331.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb268",
+      "top": -115,
+      "left": 331.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb269",
+      "top": -143.8,
+      "left": 331.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb270",
+      "top": -172.6,
+      "left": 331.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb271",
+      "top": -201.4,
+      "left": 331.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb272",
+      "top": -230.2,
+      "left": 331.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb273",
+      "top": -230.2,
+      "left": 360.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb274",
+      "top": -201.4,
+      "left": 360.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb275",
+      "top": -172.6,
+      "left": 360.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb276",
+      "top": -143.8,
+      "left": 360.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb277",
+      "top": -115,
+      "left": 360.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb278",
+      "top": -86.2,
+      "left": 360.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb279",
+      "top": -57.4,
+      "left": 360.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb280",
+      "top": -28.6,
+      "left": 360.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb281",
+      "top": -28.6,
+      "left": 389.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb282",
+      "top": -57.4,
+      "left": 389.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb283",
+      "top": -86.2,
+      "left": 389.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb284",
+      "top": -115,
+      "left": 389.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb285",
+      "top": -143.8,
+      "left": 389.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb286",
+      "top": -172.6,
+      "left": 389.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb287",
+      "top": -201.4,
+      "left": 389.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb288",
+      "top": -230.2,
+      "left": 389.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb289",
+      "top": -230.2,
+      "left": 417.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb290",
+      "top": -201.4,
+      "left": 417.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb291",
+      "top": -172.6,
+      "left": 417.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb292",
+      "top": -143.8,
+      "left": 417.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb293",
+      "top": -115,
+      "left": 417.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb294",
+      "top": -86.2,
+      "left": 417.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb295",
+      "top": -57.4,
+      "left": 417.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb296",
+      "top": -28.6,
+      "left": 417.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb297",
+      "top": -28.6,
+      "left": 446.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb298",
+      "top": -57.4,
+      "left": 446.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb299",
+      "top": -86.2,
+      "left": 446.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb300",
+      "top": -115,
+      "left": 446.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb301",
+      "top": -143.8,
+      "left": 446.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb302",
+      "top": -172.6,
+      "left": 446.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb303",
+      "top": -201.4,
+      "left": 446.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb304",
+      "top": -230.2,
+      "left": 446.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb305",
+      "top": -230.2,
+      "left": 475.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb306",
+      "top": -201.4,
+      "left": 475.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb307",
+      "top": -172.6,
+      "left": 475.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb308",
+      "top": -143.8,
+      "left": 475.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb309",
+      "top": -115,
+      "left": 475.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb310",
+      "top": -86.2,
+      "left": 475.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb311",
+      "top": -57.4,
+      "left": 475.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb312",
+      "top": -28.6,
+      "left": 475.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb313",
+      "top": -28.6,
+      "left": 504.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb314",
+      "top": -57.4,
+      "left": 504.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb315",
+      "top": -86.2,
+      "left": 504.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb316",
+      "top": -115,
+      "left": 504.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb317",
+      "top": -143.8,
+      "left": 504.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb318",
+      "top": -172.6,
+      "left": 504.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb319",
+      "top": -201.4,
+      "left": 504.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb320",
+      "top": -230.2,
+      "left": 504.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb321",
+      "top": -230.2,
+      "left": 533.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb322",
+      "top": -201.4,
+      "left": 533.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb323",
+      "top": -172.6,
+      "left": 533.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb324",
+      "top": -143.8,
+      "left": 533.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb325",
+      "top": -115,
+      "left": 533.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb326",
+      "top": -86.2,
+      "left": 533.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb327",
+      "top": -57.4,
+      "left": 533.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb328",
+      "top": -28.6,
+      "left": 533.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb329",
+      "top": -28.6,
+      "left": 561.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb330",
+      "top": -57.4,
+      "left": 561.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb331",
+      "top": -86.2,
+      "left": 561.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb332",
+      "top": -115,
+      "left": 561.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb333",
+      "top": -143.8,
+      "left": 561.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb334",
+      "top": -172.6,
+      "left": 561.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb335",
+      "top": -201.4,
+      "left": 561.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb336",
+      "top": -230.2,
+      "left": 561.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb337",
+      "top": -230.2,
+      "left": 590.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb338",
+      "top": -201.4,
+      "left": 590.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb339",
+      "top": -172.6,
+      "left": 590.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb340",
+      "top": -143.8,
+      "left": 590.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb341",
+      "top": -115,
+      "left": 590.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb342",
+      "top": -86.2,
+      "left": 590.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb343",
+      "top": -57.4,
+      "left": 590.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb344",
+      "top": -28.6,
+      "left": 590.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb345",
+      "top": -28.6,
+      "left": 619.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb346",
+      "top": -57.4,
+      "left": 619.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb347",
+      "top": -86.2,
+      "left": 619.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb348",
+      "top": -115,
+      "left": 619.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb349",
+      "top": -143.8,
+      "left": 619.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb350",
+      "top": -172.6,
+      "left": 619.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb351",
+      "top": -201.4,
+      "left": 619.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb352",
+      "top": -230.2,
+      "left": 619.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb353",
+      "top": -230.2,
+      "left": 648.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb354",
+      "top": -201.4,
+      "left": 648.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb355",
+      "top": -172.6,
+      "left": 648.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb356",
+      "top": -143.8,
+      "left": 648.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb357",
+      "top": -115,
+      "left": 648.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb358",
+      "top": -86.2,
+      "left": 648.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb359",
+      "top": -57.4,
+      "left": 648.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb360",
+      "top": -28.6,
+      "left": 648.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb361",
+      "top": -28.6,
+      "left": 677.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb362",
+      "top": -57.4,
+      "left": 677.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb363",
+      "top": -86.2,
+      "left": 677.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb364",
+      "top": -115,
+      "left": 677.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb365",
+      "top": -143.8,
+      "left": 677.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb366",
+      "top": -172.6,
+      "left": 677.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb367",
+      "top": -201.4,
+      "left": 677.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb368",
+      "top": -230.2,
+      "left": 677.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb369",
+      "top": -230.2,
+      "left": 705.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb370",
+      "top": -201.4,
+      "left": 705.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb371",
+      "top": -172.6,
+      "left": 705.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb372",
+      "top": -143.8,
+      "left": 705.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb373",
+      "top": -115,
+      "left": 705.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb374",
+      "top": -86.2,
+      "left": 705.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb375",
+      "top": -57.4,
+      "left": 705.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb376",
+      "top": -28.6,
+      "left": 705.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb377",
+      "top": -28.6,
+      "left": 734.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb378",
+      "top": -57.4,
+      "left": 734.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb379",
+      "top": -86.2,
+      "left": 734.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb380",
+      "top": -115,
+      "left": 734.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb381",
+      "top": -143.8,
+      "left": 734.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb382",
+      "top": -172.6,
+      "left": 734.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb383",
+      "top": -201.4,
+      "left": 734.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb384",
+      "top": -230.2,
+      "left": 734.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb385",
+      "top": 0,
+      "left": 300.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb386",
+      "top": 28.8,
+      "left": 300.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb387",
+      "top": 57.6,
+      "left": 300.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb388",
+      "top": 86.4,
+      "left": 300.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb389",
+      "top": 115.2,
+      "left": 300.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb390",
+      "top": 144,
+      "left": 300.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb391",
+      "top": 172.8,
+      "left": 300.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb392",
+      "top": 201.6,
+      "left": 300.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb393",
+      "top": 201.6,
+      "left": 329.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb394",
+      "top": 172.8,
+      "left": 329.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb395",
+      "top": 144,
+      "left": 329.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb396",
+      "top": 115.2,
+      "left": 329.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb397",
+      "top": 86.4,
+      "left": 329.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb398",
+      "top": 57.6,
+      "left": 329.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb399",
+      "top": 28.8,
+      "left": 329.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb400",
+      "top": 0,
+      "left": 329.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb401",
+      "top": 0,
+      "left": 357.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb402",
+      "top": 28.8,
+      "left": 357.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb403",
+      "top": 57.6,
+      "left": 357.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb404",
+      "top": 86.4,
+      "left": 357.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb405",
+      "top": 115.2,
+      "left": 357.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb406",
+      "top": 144,
+      "left": 357.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb407",
+      "top": 172.8,
+      "left": 357.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb408",
+      "top": 201.6,
+      "left": 357.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb409",
+      "top": 201.6,
+      "left": 386.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb410",
+      "top": 172.8,
+      "left": 386.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb411",
+      "top": 144,
+      "left": 386.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb412",
+      "top": 115.2,
+      "left": 386.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb413",
+      "top": 86.4,
+      "left": 386.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb414",
+      "top": 57.6,
+      "left": 386.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb415",
+      "top": 28.8,
+      "left": 386.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb416",
+      "top": 0,
+      "left": 386.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb417",
+      "top": 0,
+      "left": 415.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb418",
+      "top": 28.8,
+      "left": 415.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb419",
+      "top": 57.6,
+      "left": 415.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb420",
+      "top": 86.4,
+      "left": 415.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb421",
+      "top": 115.2,
+      "left": 415.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb422",
+      "top": 144,
+      "left": 415.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb423",
+      "top": 172.8,
+      "left": 415.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb424",
+      "top": 201.6,
+      "left": 415.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb425",
+      "top": 201.6,
+      "left": 444.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb426",
+      "top": 172.8,
+      "left": 444.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb427",
+      "top": 144,
+      "left": 444.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb428",
+      "top": 115.2,
+      "left": 444.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb429",
+      "top": 86.4,
+      "left": 444.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb430",
+      "top": 57.6,
+      "left": 444.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb431",
+      "top": 28.8,
+      "left": 444.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb432",
+      "top": 0,
+      "left": 444.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb433",
+      "top": 0,
+      "left": 473.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb434",
+      "top": 28.8,
+      "left": 473.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb435",
+      "top": 57.6,
+      "left": 473.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb436",
+      "top": 86.4,
+      "left": 473.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb437",
+      "top": 115.2,
+      "left": 473.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb438",
+      "top": 144,
+      "left": 473.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb439",
+      "top": 172.8,
+      "left": 473.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb440",
+      "top": 201.6,
+      "left": 473.1,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb441",
+      "top": 201.6,
+      "left": 501.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb442",
+      "top": 172.8,
+      "left": 501.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb443",
+      "top": 144,
+      "left": 501.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb444",
+      "top": 115.2,
+      "left": 501.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb445",
+      "top": 86.4,
+      "left": 501.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb446",
+      "top": 57.6,
+      "left": 501.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb447",
+      "top": 28.8,
+      "left": 501.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb448",
+      "top": 0,
+      "left": 501.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb449",
+      "top": 0,
+      "left": 530.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb450",
+      "top": 28.8,
+      "left": 530.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb451",
+      "top": 57.6,
+      "left": 530.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb452",
+      "top": 86.4,
+      "left": 530.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb453",
+      "top": 115.2,
+      "left": 530.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb454",
+      "top": 144,
+      "left": 530.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb455",
+      "top": 172.8,
+      "left": 530.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb456",
+      "top": 201.6,
+      "left": 530.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb457",
+      "top": 201.6,
+      "left": 559.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb458",
+      "top": 172.8,
+      "left": 559.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb459",
+      "top": 144,
+      "left": 559.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb460",
+      "top": 115.2,
+      "left": 559.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb461",
+      "top": 86.4,
+      "left": 559.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb462",
+      "top": 57.6,
+      "left": 559.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb463",
+      "top": 28.8,
+      "left": 559.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb464",
+      "top": 0,
+      "left": 559.5,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb465",
+      "top": 0,
+      "left": 588.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb466",
+      "top": 28.8,
+      "left": 588.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb467",
+      "top": 57.6,
+      "left": 588.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb468",
+      "top": 86.4,
+      "left": 588.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb469",
+      "top": 115.2,
+      "left": 588.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb470",
+      "top": 144,
+      "left": 588.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb471",
+      "top": 172.8,
+      "left": 588.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb472",
+      "top": 201.6,
+      "left": 588.3,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb473",
+      "top": 201.6,
+      "left": 617.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb474",
+      "top": 172.8,
+      "left": 617.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb475",
+      "top": 144,
+      "left": 617.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb476",
+      "top": 115.2,
+      "left": 617.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb477",
+      "top": 86.4,
+      "left": 617.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb478",
+      "top": 57.6,
+      "left": 617.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb479",
+      "top": 28.8,
+      "left": 617.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb480",
+      "top": 0,
+      "left": 617.1,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb481",
+      "top": 0,
+      "left": 645.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb482",
+      "top": 28.8,
+      "left": 645.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb483",
+      "top": 57.6,
+      "left": 645.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb484",
+      "top": 86.4,
+      "left": 645.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb485",
+      "top": 115.2,
+      "left": 645.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb486",
+      "top": 144,
+      "left": 645.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb487",
+      "top": 172.8,
+      "left": 645.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb488",
+      "top": 201.6,
+      "left": 645.9,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb489",
+      "top": 201.6,
+      "left": 674.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb490",
+      "top": 172.8,
+      "left": 674.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb491",
+      "top": 144,
+      "left": 674.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb492",
+      "top": 115.2,
+      "left": 674.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb493",
+      "top": 86.4,
+      "left": 674.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb494",
+      "top": 57.6,
+      "left": 674.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb495",
+      "top": 28.8,
+      "left": 674.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb496",
+      "top": 0,
+      "left": 674.7,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb497",
+      "top": 0,
+      "left": 703.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb498",
+      "top": 28.8,
+      "left": 703.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb499",
+      "top": 57.6,
+      "left": 703.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb500",
+      "top": 86.4,
+      "left": 703.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb501",
+      "top": 115.2,
+      "left": 703.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb502",
+      "top": 144,
+      "left": 703.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb503",
+      "top": 172.8,
+      "left": 703.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb504",
+      "top": 201.6,
+      "left": 703.5,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb505",
+      "top": 201.6,
+      "left": 732.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb506",
+      "top": 172.8,
+      "left": 732.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb507",
+      "top": 144,
+      "left": 732.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb508",
+      "top": 115.2,
+      "left": 732.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb509",
+      "top": 86.4,
+      "left": 732.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb510",
+      "top": 57.6,
+      "left": 732.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb511",
+      "top": 28.8,
+      "left": 732.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb512",
+      "top": 0,
+      "left": 732.3,
+      "rotate": 90,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "rgb1:DIN",
+      "ctrl:6",
+      "green",
+      [
+        "v-152.8",
+        "h163.2"
+      ]
+    ],
+    [
+      "rgb1:DOUT",
+      "rgb2:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb2:DOUT",
+      "rgb3:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb3:DOUT",
+      "rgb4:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb4:DOUT",
+      "rgb5:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb5:DOUT",
+      "rgb6:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb6:DOUT",
+      "rgb7:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb7:DOUT",
+      "rgb8:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb8:DOUT",
+      "rgb9:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb9:DOUT",
+      "rgb10:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb10:DOUT",
+      "rgb11:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb11:DOUT",
+      "rgb12:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb12:DOUT",
+      "rgb13:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb13:DOUT",
+      "rgb14:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb14:DOUT",
+      "rgb15:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb15:DOUT",
+      "rgb16:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb16:DOUT",
+      "rgb17:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb17:DOUT",
+      "rgb18:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb18:DOUT",
+      "rgb19:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb19:DOUT",
+      "rgb20:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb20:DOUT",
+      "rgb21:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb21:DOUT",
+      "rgb22:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb22:DOUT",
+      "rgb23:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb23:DOUT",
+      "rgb24:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb24:DOUT",
+      "rgb25:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb25:DOUT",
+      "rgb26:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb26:DOUT",
+      "rgb27:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb27:DOUT",
+      "rgb28:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb28:DOUT",
+      "rgb29:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb29:DOUT",
+      "rgb30:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb30:DOUT",
+      "rgb31:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb31:DOUT",
+      "rgb32:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb32:DOUT",
+      "rgb33:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb33:DOUT",
+      "rgb34:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb34:DOUT",
+      "rgb35:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb35:DOUT",
+      "rgb36:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb36:DOUT",
+      "rgb37:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb37:DOUT",
+      "rgb38:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb38:DOUT",
+      "rgb39:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb39:DOUT",
+      "rgb40:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb40:DOUT",
+      "rgb41:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb41:DOUT",
+      "rgb42:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb42:DOUT",
+      "rgb43:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb43:DOUT",
+      "rgb44:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb44:DOUT",
+      "rgb45:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb45:DOUT",
+      "rgb46:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb46:DOUT",
+      "rgb47:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb47:DOUT",
+      "rgb48:DIN",
+      "green",
+      [
+        "v9.6",
+        "h-10.5"
+      ]
+    ],
+    [
+      "rgb48:DOUT",
+      "rgb49:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb49:DOUT",
+      "rgb50:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb50:DOUT",
+      "rgb51:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb51:DOUT",
+      "rgb52:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb52:DOUT",
+      "rgb53:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb53:DOUT",
+      "rgb54:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb54:DOUT",
+      "rgb55:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb55:DOUT",
+      "rgb56:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb56:DOUT",
+      "rgb57:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb57:DOUT",
+      "rgb58:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb58:DOUT",
+      "rgb59:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb59:DOUT",
+      "rgb60:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb60:DOUT",
+      "rgb61:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb61:DOUT",
+      "rgb62:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb62:DOUT",
+      "rgb63:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb63:DOUT",
+      "rgb64:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb64:DOUT",
+      "rgb65:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb65:DOUT",
+      "rgb66:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb66:DOUT",
+      "rgb67:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb67:DOUT",
+      "rgb68:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb68:DOUT",
+      "rgb69:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb69:DOUT",
+      "rgb70:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb70:DOUT",
+      "rgb71:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb71:DOUT",
+      "rgb72:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb72:DOUT",
+      "rgb73:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb73:DOUT",
+      "rgb74:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb74:DOUT",
+      "rgb75:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb75:DOUT",
+      "rgb76:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb76:DOUT",
+      "rgb77:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb77:DOUT",
+      "rgb78:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb78:DOUT",
+      "rgb79:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb79:DOUT",
+      "rgb80:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb80:DOUT",
+      "rgb81:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb82:DIN",
+      "rgb81:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb83:DIN",
+      "rgb82:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb84:DIN",
+      "rgb83:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb85:DIN",
+      "rgb84:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb86:DIN",
+      "rgb85:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb87:DIN",
+      "rgb86:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb88:DIN",
+      "rgb87:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb89:DIN",
+      "rgb88:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb90:DIN",
+      "rgb89:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb91:DIN",
+      "rgb90:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb92:DIN",
+      "rgb91:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb93:DIN",
+      "rgb92:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb94:DIN",
+      "rgb93:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb95:DIN",
+      "rgb94:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb96:DIN",
+      "rgb95:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb96:DOUT",
+      "rgb97:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb97:DOUT",
+      "rgb98:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb98:DOUT",
+      "rgb99:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb99:DOUT",
+      "rgb100:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb100:DOUT",
+      "rgb101:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb101:DOUT",
+      "rgb102:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb102:DOUT",
+      "rgb103:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb103:DOUT",
+      "rgb104:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb104:DOUT",
+      "rgb105:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb105:DOUT",
+      "rgb106:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb106:DOUT",
+      "rgb107:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb107:DOUT",
+      "rgb108:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb108:DOUT",
+      "rgb109:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb109:DOUT",
+      "rgb110:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb110:DOUT",
+      "rgb111:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb111:DOUT",
+      "rgb112:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb112:DOUT",
+      "rgb113:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb114:DIN",
+      "rgb113:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb115:DIN",
+      "rgb114:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb116:DIN",
+      "rgb115:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb117:DIN",
+      "rgb116:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb118:DIN",
+      "rgb117:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb119:DIN",
+      "rgb118:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb120:DIN",
+      "rgb119:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb121:DIN",
+      "rgb120:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb122:DIN",
+      "rgb121:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb123:DIN",
+      "rgb122:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb124:DIN",
+      "rgb123:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb125:DIN",
+      "rgb124:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb126:DIN",
+      "rgb125:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb127:DIN",
+      "rgb126:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb128:DIN",
+      "rgb127:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb128:DOUT",
+      "rgb129:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb129:DOUT",
+      "rgb130:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb130:DOUT",
+      "rgb131:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb131:DOUT",
+      "rgb132:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb132:DOUT",
+      "rgb133:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb133:DOUT",
+      "rgb134:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb134:DOUT",
+      "rgb135:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb135:DOUT",
+      "rgb136:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb136:DOUT",
+      "rgb137:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb137:DOUT",
+      "rgb138:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb138:DOUT",
+      "rgb139:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb139:DOUT",
+      "rgb140:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb140:DOUT",
+      "rgb141:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb141:DOUT",
+      "rgb142:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb142:DOUT",
+      "rgb143:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb143:DOUT",
+      "rgb144:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb144:DOUT",
+      "rgb145:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb146:DIN",
+      "rgb145:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb147:DIN",
+      "rgb146:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb148:DIN",
+      "rgb147:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb149:DIN",
+      "rgb148:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb150:DIN",
+      "rgb149:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb151:DIN",
+      "rgb150:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb152:DIN",
+      "rgb151:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb153:DIN",
+      "rgb152:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb154:DIN",
+      "rgb153:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb155:DIN",
+      "rgb154:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb156:DIN",
+      "rgb155:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb157:DIN",
+      "rgb156:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb158:DIN",
+      "rgb157:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb159:DIN",
+      "rgb158:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb160:DIN",
+      "rgb159:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb160:DOUT",
+      "rgb161:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb161:DOUT",
+      "rgb162:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb162:DOUT",
+      "rgb163:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb163:DOUT",
+      "rgb164:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb164:DOUT",
+      "rgb165:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb165:DOUT",
+      "rgb166:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb166:DOUT",
+      "rgb167:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb167:DOUT",
+      "rgb168:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb168:DOUT",
+      "rgb169:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb169:DOUT",
+      "rgb170:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb170:DOUT",
+      "rgb171:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb171:DOUT",
+      "rgb172:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb172:DOUT",
+      "rgb173:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb173:DOUT",
+      "rgb174:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb174:DOUT",
+      "rgb175:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb175:DOUT",
+      "rgb176:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb176:DOUT",
+      "rgb177:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb178:DIN",
+      "rgb177:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb179:DIN",
+      "rgb178:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb180:DIN",
+      "rgb179:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb181:DIN",
+      "rgb180:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb182:DIN",
+      "rgb181:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb183:DIN",
+      "rgb182:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb184:DIN",
+      "rgb183:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb185:DIN",
+      "rgb184:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb186:DIN",
+      "rgb185:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb187:DIN",
+      "rgb186:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb188:DIN",
+      "rgb187:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb189:DIN",
+      "rgb188:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb190:DIN",
+      "rgb189:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb191:DIN",
+      "rgb190:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb192:DIN",
+      "rgb191:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb192:DOUT",
+      "rgb193:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb193:DOUT",
+      "rgb194:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb194:DOUT",
+      "rgb195:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb195:DOUT",
+      "rgb196:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb196:DOUT",
+      "rgb197:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb197:DOUT",
+      "rgb198:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb198:DOUT",
+      "rgb199:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb199:DOUT",
+      "rgb200:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb200:DOUT",
+      "rgb201:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb201:DOUT",
+      "rgb202:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb202:DOUT",
+      "rgb203:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb203:DOUT",
+      "rgb204:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb204:DOUT",
+      "rgb205:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb205:DOUT",
+      "rgb206:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb206:DOUT",
+      "rgb207:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb207:DOUT",
+      "rgb208:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb208:DOUT",
+      "rgb209:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb210:DIN",
+      "rgb209:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb211:DIN",
+      "rgb210:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb212:DIN",
+      "rgb211:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb213:DIN",
+      "rgb212:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb214:DIN",
+      "rgb213:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb215:DIN",
+      "rgb214:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb216:DIN",
+      "rgb215:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb217:DIN",
+      "rgb216:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb218:DIN",
+      "rgb217:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb219:DIN",
+      "rgb218:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb220:DIN",
+      "rgb219:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb221:DIN",
+      "rgb220:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb222:DIN",
+      "rgb221:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb223:DIN",
+      "rgb222:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb224:DIN",
+      "rgb223:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb224:DOUT",
+      "rgb225:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb225:DOUT",
+      "rgb226:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb226:DOUT",
+      "rgb227:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb227:DOUT",
+      "rgb228:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb228:DOUT",
+      "rgb229:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb229:DOUT",
+      "rgb230:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb230:DOUT",
+      "rgb231:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb231:DOUT",
+      "rgb232:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb232:DOUT",
+      "rgb233:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb233:DOUT",
+      "rgb234:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb234:DOUT",
+      "rgb235:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb235:DOUT",
+      "rgb236:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb236:DOUT",
+      "rgb237:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb237:DOUT",
+      "rgb238:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb238:DOUT",
+      "rgb239:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb239:DOUT",
+      "rgb240:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb240:DOUT",
+      "rgb241:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb242:DIN",
+      "rgb241:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb243:DIN",
+      "rgb242:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb244:DIN",
+      "rgb243:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb245:DIN",
+      "rgb244:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb246:DIN",
+      "rgb245:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb247:DIN",
+      "rgb246:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb248:DIN",
+      "rgb247:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb249:DIN",
+      "rgb248:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb250:DIN",
+      "rgb249:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb251:DIN",
+      "rgb250:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb252:DIN",
+      "rgb251:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb253:DIN",
+      "rgb252:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb254:DIN",
+      "rgb253:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb255:DIN",
+      "rgb254:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb256:DIN",
+      "rgb255:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb257:DOUT",
+      "rgb258:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb258:DOUT",
+      "rgb259:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb259:DOUT",
+      "rgb260:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb260:DOUT",
+      "rgb261:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb261:DOUT",
+      "rgb262:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb262:DOUT",
+      "rgb263:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb263:DOUT",
+      "rgb264:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb265:DOUT",
+      "rgb266:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb266:DOUT",
+      "rgb267:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb267:DOUT",
+      "rgb268:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb268:DOUT",
+      "rgb269:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb269:DOUT",
+      "rgb270:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb270:DOUT",
+      "rgb271:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb271:DOUT",
+      "rgb272:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb272:DOUT",
+      "rgb273:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb273:DOUT",
+      "rgb274:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb274:DOUT",
+      "rgb275:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb275:DOUT",
+      "rgb276:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb276:DOUT",
+      "rgb277:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb277:DOUT",
+      "rgb278:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb278:DOUT",
+      "rgb279:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb279:DOUT",
+      "rgb280:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb281:DOUT",
+      "rgb282:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb282:DOUT",
+      "rgb283:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb283:DOUT",
+      "rgb284:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb284:DOUT",
+      "rgb285:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb285:DOUT",
+      "rgb286:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb286:DOUT",
+      "rgb287:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb287:DOUT",
+      "rgb288:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb288:DOUT",
+      "rgb289:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb289:DOUT",
+      "rgb290:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb290:DOUT",
+      "rgb291:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb291:DOUT",
+      "rgb292:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb292:DOUT",
+      "rgb293:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb293:DOUT",
+      "rgb294:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb294:DOUT",
+      "rgb295:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb295:DOUT",
+      "rgb296:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb298:DIN",
+      "rgb297:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb299:DIN",
+      "rgb298:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb300:DIN",
+      "rgb299:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb301:DIN",
+      "rgb300:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb302:DIN",
+      "rgb301:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb303:DIN",
+      "rgb302:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb304:DIN",
+      "rgb303:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb304:DOUT",
+      "rgb305:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb305:DOUT",
+      "rgb306:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb306:DOUT",
+      "rgb307:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb307:DOUT",
+      "rgb308:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb308:DOUT",
+      "rgb309:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb309:DOUT",
+      "rgb310:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb310:DOUT",
+      "rgb311:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb311:DOUT",
+      "rgb312:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb314:DIN",
+      "rgb313:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb315:DIN",
+      "rgb314:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb316:DIN",
+      "rgb315:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb317:DIN",
+      "rgb316:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb318:DIN",
+      "rgb317:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb319:DIN",
+      "rgb318:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb320:DIN",
+      "rgb319:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb320:DOUT",
+      "rgb321:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb321:DOUT",
+      "rgb322:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb322:DOUT",
+      "rgb323:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb323:DOUT",
+      "rgb324:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb324:DOUT",
+      "rgb325:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb325:DOUT",
+      "rgb326:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb326:DOUT",
+      "rgb327:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb327:DOUT",
+      "rgb328:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb330:DIN",
+      "rgb329:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb331:DIN",
+      "rgb330:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb332:DIN",
+      "rgb331:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb333:DIN",
+      "rgb332:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb334:DIN",
+      "rgb333:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb335:DIN",
+      "rgb334:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb336:DIN",
+      "rgb335:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb336:DOUT",
+      "rgb337:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb337:DOUT",
+      "rgb338:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb338:DOUT",
+      "rgb339:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb339:DOUT",
+      "rgb340:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb340:DOUT",
+      "rgb341:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb341:DOUT",
+      "rgb342:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb342:DOUT",
+      "rgb343:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb343:DOUT",
+      "rgb344:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb346:DIN",
+      "rgb345:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb347:DIN",
+      "rgb346:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb348:DIN",
+      "rgb347:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb349:DIN",
+      "rgb348:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb350:DIN",
+      "rgb349:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb351:DIN",
+      "rgb350:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb352:DIN",
+      "rgb351:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb352:DOUT",
+      "rgb353:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb353:DOUT",
+      "rgb354:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb354:DOUT",
+      "rgb355:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb355:DOUT",
+      "rgb356:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb356:DOUT",
+      "rgb357:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb357:DOUT",
+      "rgb358:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb358:DOUT",
+      "rgb359:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb359:DOUT",
+      "rgb360:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb362:DIN",
+      "rgb361:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb363:DIN",
+      "rgb362:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb364:DIN",
+      "rgb363:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb365:DIN",
+      "rgb364:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb366:DIN",
+      "rgb365:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb367:DIN",
+      "rgb366:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb368:DIN",
+      "rgb367:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb368:DOUT",
+      "rgb369:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb369:DOUT",
+      "rgb370:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb370:DOUT",
+      "rgb371:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb371:DOUT",
+      "rgb372:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb372:DOUT",
+      "rgb373:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb373:DOUT",
+      "rgb374:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb374:DOUT",
+      "rgb375:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb375:DOUT",
+      "rgb376:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb378:DIN",
+      "rgb377:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb379:DIN",
+      "rgb378:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb380:DIN",
+      "rgb379:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb381:DIN",
+      "rgb380:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb382:DIN",
+      "rgb381:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb383:DIN",
+      "rgb382:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb384:DIN",
+      "rgb383:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb385:DOUT",
+      "rgb386:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb386:DOUT",
+      "rgb387:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb387:DOUT",
+      "rgb388:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb388:DOUT",
+      "rgb389:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb389:DOUT",
+      "rgb390:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb390:DOUT",
+      "rgb391:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb391:DOUT",
+      "rgb392:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb393:DOUT",
+      "rgb394:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb394:DOUT",
+      "rgb395:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb395:DOUT",
+      "rgb396:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb396:DOUT",
+      "rgb397:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb397:DOUT",
+      "rgb398:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb398:DOUT",
+      "rgb399:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb399:DOUT",
+      "rgb400:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb401:DOUT",
+      "rgb402:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb402:DOUT",
+      "rgb403:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb403:DOUT",
+      "rgb404:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb404:DOUT",
+      "rgb405:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb405:DOUT",
+      "rgb406:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb406:DOUT",
+      "rgb407:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb407:DOUT",
+      "rgb408:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb409:DOUT",
+      "rgb410:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb410:DOUT",
+      "rgb411:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb411:DOUT",
+      "rgb412:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb412:DOUT",
+      "rgb413:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb413:DOUT",
+      "rgb414:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb414:DOUT",
+      "rgb415:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb415:DOUT",
+      "rgb416:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb417:DOUT",
+      "rgb418:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb418:DOUT",
+      "rgb419:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb419:DOUT",
+      "rgb420:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb420:DOUT",
+      "rgb421:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb421:DOUT",
+      "rgb422:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb422:DOUT",
+      "rgb423:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb423:DOUT",
+      "rgb424:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb426:DIN",
+      "rgb425:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb427:DIN",
+      "rgb426:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb428:DIN",
+      "rgb427:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb429:DIN",
+      "rgb428:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb430:DIN",
+      "rgb429:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb431:DIN",
+      "rgb430:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb432:DIN",
+      "rgb431:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb433:DOUT",
+      "rgb434:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb434:DOUT",
+      "rgb435:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb435:DOUT",
+      "rgb436:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb436:DOUT",
+      "rgb437:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb437:DOUT",
+      "rgb438:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb438:DOUT",
+      "rgb439:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb439:DOUT",
+      "rgb440:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb442:DIN",
+      "rgb441:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb443:DIN",
+      "rgb442:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb444:DIN",
+      "rgb443:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb445:DIN",
+      "rgb444:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb446:DIN",
+      "rgb445:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb447:DIN",
+      "rgb446:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb448:DIN",
+      "rgb447:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb449:DOUT",
+      "rgb450:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb450:DOUT",
+      "rgb451:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb451:DOUT",
+      "rgb452:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb452:DOUT",
+      "rgb453:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb453:DOUT",
+      "rgb454:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb454:DOUT",
+      "rgb455:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb455:DOUT",
+      "rgb456:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb458:DIN",
+      "rgb457:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb459:DIN",
+      "rgb458:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb460:DIN",
+      "rgb459:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb461:DIN",
+      "rgb460:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb462:DIN",
+      "rgb461:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb463:DIN",
+      "rgb462:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb464:DIN",
+      "rgb463:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb465:DOUT",
+      "rgb466:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb466:DOUT",
+      "rgb467:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb467:DOUT",
+      "rgb468:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb468:DOUT",
+      "rgb469:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb469:DOUT",
+      "rgb470:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb470:DOUT",
+      "rgb471:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb471:DOUT",
+      "rgb472:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb474:DIN",
+      "rgb473:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb475:DIN",
+      "rgb474:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb476:DIN",
+      "rgb475:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb477:DIN",
+      "rgb476:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb478:DIN",
+      "rgb477:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb479:DIN",
+      "rgb478:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb480:DIN",
+      "rgb479:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb481:DOUT",
+      "rgb482:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb482:DOUT",
+      "rgb483:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb483:DOUT",
+      "rgb484:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb484:DOUT",
+      "rgb485:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb485:DOUT",
+      "rgb486:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb486:DOUT",
+      "rgb487:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb487:DOUT",
+      "rgb488:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb490:DIN",
+      "rgb489:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb491:DIN",
+      "rgb490:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb492:DIN",
+      "rgb491:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb493:DIN",
+      "rgb492:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb494:DIN",
+      "rgb493:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb495:DIN",
+      "rgb494:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb496:DIN",
+      "rgb495:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb497:DOUT",
+      "rgb498:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb498:DOUT",
+      "rgb499:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb499:DOUT",
+      "rgb500:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb500:DOUT",
+      "rgb501:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb501:DOUT",
+      "rgb502:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb502:DOUT",
+      "rgb503:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb503:DOUT",
+      "rgb504:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb506:DIN",
+      "rgb505:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb507:DIN",
+      "rgb506:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb508:DIN",
+      "rgb507:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb509:DIN",
+      "rgb508:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb510:DIN",
+      "rgb509:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb511:DIN",
+      "rgb510:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb512:DIN",
+      "rgb511:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb504:DOUT",
+      "rgb505:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb488:DOUT",
+      "rgb489:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb472:DOUT",
+      "rgb473:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb456:DOUT",
+      "rgb457:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb440:DOUT",
+      "rgb441:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb424:DOUT",
+      "rgb425:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb392:DOUT",
+      "rgb393:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb408:DOUT",
+      "rgb409:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb256:DOUT",
+      "rgb257:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb264:DOUT",
+      "rgb385:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb265:DIN",
+      "rgb400:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb280:DOUT",
+      "rgb401:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb281:DIN",
+      "rgb416:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb296:DOUT",
+      "rgb417:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb297:DIN",
+      "rgb432:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb312:DOUT",
+      "rgb433:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb313:DIN",
+      "rgb448:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb328:DOUT",
+      "rgb449:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb329:DIN",
+      "rgb464:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb344:DOUT",
+      "rgb465:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb345:DIN",
+      "rgb480:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb360:DOUT",
+      "rgb481:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb361:DIN",
+      "rgb496:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb376:DOUT",
+      "rgb497:DIN",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "rgb377:DIN",
+      "rgb512:DOUT",
+      "green",
+      [
+        "v0"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}
